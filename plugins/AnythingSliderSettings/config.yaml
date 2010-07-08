@@ -1,0 +1,135 @@
+id: anythingslider-settings
+name: AnythingSlider Settings
+version: 1.0
+author_name: Ken Edwards, Meancode Media, LLC
+author_link: http://meancode.com/bgviews
+doc_link: http://meancode.com/bgviews
+plugin_link: http://github.com/meancode/mt-anythingslider
+icon: 'meancode.gif'
+description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
+
+options:
+  fieldsets:
+    home:
+      label: 'Script Settings'
+    site:
+      label: 'Site Options'
+    feature:
+      label: 'Feature Spotlight'
+    feed:
+      label: 'Feed Options'
+    section:
+      label: 'Section Pages Top Story'
+  anything_easing:
+    type: select
+    label: "Easing"
+    hint: "Anything other than linear or swing requires the easing plugin. This value changes the way slides animate when they transition from one to another."
+    tag: 'AnythingSliderEasing'
+    values: linear,swing,easeInOutExpo
+    default: easeInOutExpo
+    order: 1
+    scope: blog
+    fieldset: home
+  anything_autoplay:
+    type: select
+    label: "Auto Play"
+    hint: "This turns off the entire FUNCTIONALITY, not just if it starts running or not."
+    tag: 'AnythingSliderAutoPlay'
+    values: true,false
+    default: true
+    order: 2
+    scope: blog
+    fieldset: home
+  anything_startstopped:
+    type: select
+    label: "Start Stopped?"
+    hint: "If autoPlay is on, this can force it to start stopped."
+    tag: 'AnythingSliderStartStopped'
+    values: true,false
+    default: false
+    order: 3
+    scope: blog
+    fieldset: home
+  anything_delay:
+    type: text
+    label: "Delay"
+    hint: "How long between slide transitions in AutoPlay mode."
+    tag: 'AnythingSliderDelay'
+    default: 3000
+    order: 4
+    scope: blog
+    fieldset: home
+  anything_animation:
+    type: text
+    label: "Animation Time"
+    hint: "How long the slide transition takes."
+    tag: 'AnythingSliderAnimation'
+    default: 600
+    order: 5
+    scope: blog
+    fieldset: home
+  anything_hashtags:
+    type: select
+    label: "Hashtags"
+    hint: "Should links change the hashtag in the URL?"
+    tag: 'AnythingSliderHashTags'
+    values: true,false
+    default: true
+    order: 6
+    scope: blog
+    fieldset: home
+  anything_nav:
+    type: select
+    label: "Show Navigation"
+    hint: "If true, builds and list of anchor links to link to each slide. Setting to false also hides them from view."
+    tag: 'AnythingSliderNav'
+    values: true,false
+    default: true
+    order: 7
+    scope: blog
+    fieldset: home
+  anything_pausehover:
+    type: select
+    label: "Puase on Hover?"
+    hint: "If true, and autoPlay is enabled, the carousel will pause on mouse hover."
+    tag: 'AnythingSliderPauseHover'
+    values: true,false
+    default: true
+    order: 8
+    scope: blog
+    fieldset: home
+  anything_starttext:
+    type: text
+    label: "Start Text"
+    hint: "Start text that displays on the start/stop toggle button."
+    tag: 'AnythingSliderStartText'
+    default: Start
+    order: 9
+    scope: blog
+    fieldset: home
+  anything_stoptext:
+    type: text
+    label: "Stop Text"
+    hint: "Stop text that displays on the start/stop toggle button."
+    tag: 'AnythingSliderStopText'
+    default: Stop
+    order: 10
+    scope: blog
+    fieldset: home
+  anything_navformatter:
+    type: checkbox
+    label: "Navigation Formatting?"
+    hint: "If checked, and Show Navigation is true, navigation tabs will display Panel 1, Panel 2, etc..."
+    tag: 'IfAnythingSliderNavFormatter?'
+    order: 11
+    scope: blog
+    fieldset: home
+  anything_navformattext:
+    type: text
+    label: "Navigation Text"
+    hint: "Only valid if the Navigation Formatting? checkbox is checked. Examples: Panel, Slide, Frame, etc."
+    tag: 'AnythingSliderNavFormatText'
+    default: Panel
+    order: 12
+    scope: blog
+    fieldset: home
