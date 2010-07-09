@@ -4,16 +4,18 @@ version: 1.0
 author_name: Ken Edwards, Meancode Media, LLC
 author_link: http://meancode.com/bgviews
 doc_link: http://meancode.com/bgviews
-plugin_link: http://github.com/meancode/mt-anythingslider
+plugin_link: http://github.com/meancode/mt-plugin-anythingslider
 icon: 'meancode.gif'
 description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
 
 options:
   fieldsets:
     home:
-      label: 'Script Settings'
-    site:
-      label: 'Site Options'
+      label: 'Slider Settings'
+      order: 1
+    images:
+      label: 'Slider Images'
+      order: 2
     feature:
       label: 'Feature Spotlight'
     feed:
@@ -98,13 +100,21 @@ options:
     order: 8
     scope: blog
     fieldset: home
+  anything_hidetoggle:
+    type: checkbox
+    label: "Hide Toggle?"
+    hint: "If checked, the Start/Stop toggle button will be hidden from view."
+    tag: 'IfAnythingSliderHideToggle?'
+    order: 9
+    scope: blog
+    fieldset: home
   anything_starttext:
     type: text
     label: "Start Text"
     hint: "Start text that displays on the start/stop toggle button."
     tag: 'AnythingSliderStartText'
     default: Start
-    order: 9
+    order: 10
     scope: blog
     fieldset: home
   anything_stoptext:
@@ -113,7 +123,7 @@ options:
     hint: "Stop text that displays on the start/stop toggle button."
     tag: 'AnythingSliderStopText'
     default: Stop
-    order: 10
+    order: 11
     scope: blog
     fieldset: home
   anything_navformatter:
@@ -121,7 +131,7 @@ options:
     label: "Navigation Formatting?"
     hint: "If checked, and Show Navigation is true, navigation tabs will display Panel 1, Panel 2, etc..."
     tag: 'IfAnythingSliderNavFormatter?'
-    order: 11
+    order: 12
     scope: blog
     fieldset: home
   anything_navformattext:
@@ -130,6 +140,32 @@ options:
     hint: "Only valid if the Navigation Formatting? checkbox is checked. Examples: Panel, Slide, Frame, etc."
     tag: 'AnythingSliderNavFormatText'
     default: Panel
-    order: 12
+    order: 13
     scope: blog
     fieldset: home
+  anything_hidearrows:
+    type: checkbox
+    label: "Hide Arrows?"
+    hint: "If checked, the back/forward arrows will be hidden from view."
+    tag: 'IfAnythingSliderHideArrows?'
+    order: 14
+    scope: blog
+    fieldset: home
+  anything_arrowsimg:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Arrows"
+    hint: "The arrows image is a single PNG with normal and hover states for the left and right arrows. See the template image for an example."
+    tag: 'AnythingSliderArrowsImg'
+    order: 1
+    scope: blog
+    fieldset: images
+  anything_thumbimg:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Navigation Background"
+    hint: "The background image used for the start/stop toggle and navigation buttons. See the template image for an example."
+    tag: 'AnythingSliderThumbImg'
+    order: 1
+    scope: blog
+    fieldset: images
