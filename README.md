@@ -35,9 +35,9 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 	   pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
 	   startText: "Start",             // Start text
 	   stopText: "Stop",               // Stop text
-	   navigationFormatter: null       // Advanced Use: [see README](http://github.com/dcneiner/AnythingSlider)
+	   navigationFormatter: null       // Advanced Use: see AnythingSlider README
 	});
 
 # Movable Type Plugin Overview
 
-This plugin, based on v1.2 of AnythingSlider, that allows for blog-level changes to the AnythingSlider options in a plugin interface inside of Movable Type. Beyond the options mentioned above, this allows to show/hide a couple elements the original did not from within Movable Type, not requiring editing of JavaScript or CSS files.
+This plugin, based on v1.2 of AnythingSlider, allows for blog-level changes to the AnythingSlider options in a plugin interface inside of Movable Type. Beyond the options mentioned above, this allows to show/hide a couple elements the original did not from within Movable Type, not requiring editing of JavaScript or CSS files.
