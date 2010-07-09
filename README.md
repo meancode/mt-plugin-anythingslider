@@ -1,4 +1,4 @@
-# AnythingSlider Movable Type Plugin
+# AnythingSlider Movable Type Plugin (incomplete)
 
 From the [AnythingSlider README](http://github.com/dcneiner/AnythingSlider):
 
@@ -8,6 +8,10 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 
 * Movable Type 4.1 or higher
 * [Config Assistant](http://github.com/endevver/mt-plugin-configassistant)
+
+# Installation
+
+This plugin is installed [just like any other Movable Type Plugin](http://www.majordojo.com/2008/12/the-ultimate-guide-to-installing-movable-type-plugins.php).
 
 # jQuery Plugin Overview
 
@@ -40,4 +44,14 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 
 # Movable Type Plugin Overview
 
-This plugin, based on v1.2 of AnythingSlider, allows for blog-level changes to the AnythingSlider options in a plugin interface inside of Movable Type. Beyond the options mentioned above, this allows to show/hide a couple elements the original did not from within Movable Type, not requiring editing of JavaScript or CSS files.
+This plugin, based on v1.2 of AnythingSlider, allows for blog-level changes to the AnythingSlider options by going to Tools -> Plugins. Beyond the options mentioned above, this allows you to show/hide a couple elements the original did not, from within Movable Type. Putting these options into a Movable Type interface allows you to quickly make modifications, rebuild your templates, and see your results without tinkering with JavaScript for CSS code.
+
+## General Use
+
+While a great deal of flexibility has been revealed in the plugin Settings, you will likely need to tweak CSS to fir your desired layout. If you plan to use this in your Movable Type site, light editing of the AnythingSlider CSS will be required. 
+
+This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin.
+
+## Theme Designers
+
+If you are designing a Melody or Movable Type 4 theme, and want to use a jQuery-based carousel that offers a lot of features, AnythingSlider works great. You can easily modify the defaults in this plugin, .mtml templates and CSS to fit your liking, then deploy AnythingSlider with your theme. Just fork this repository and make your changes.
