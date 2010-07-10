@@ -1,0 +1,235 @@
+id: anythingslider
+name: AnythingSlider
+version: 1.0
+author_name: Ken Edwards, Meancode Media, LLC
+author_link: http://meancode.com/bgviews
+doc_link: http://meancode.com/bgviews
+plugin_link: http://github.com/meancode/mt-plugin-anythingslider
+description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
+
+options:
+  fieldsets:
+    one:
+      label: 'Panel 1 Options'
+      order: 1
+    two:
+      label: 'Panel 2 Options'
+      order: 2
+    three:
+      label: 'Panel 3 Options'
+      order: 3
+    four:
+      label: 'Panel 4 Options'
+      order: 4
+    five:
+      label: 'Panel 5 Options'
+      order: 5
+    six:
+      label: 'Panel 6 Options'
+      order: 6
+    seven:
+      label: 'Panel 7 Options'
+      order: 7
+    eight:
+      label: 'Panel 8 Options'
+      order: 8
+  anything_p1check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP1Check?'
+    order: 1
+    scope: blog
+    fieldset: one
+  anything_p1entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP1Entry'
+    order: 2
+    scope: blog
+    fieldset: one
+  anything_panel1img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP1Img'
+    order: 3
+    scope: blog
+    fieldset: one
+  anything_p2check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP2Check?'
+    order: 1
+    scope: blog
+    fieldset: two
+  anything_p2entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP2Entry'
+    order: 2
+    scope: blog
+    fieldset: two
+  anything_panel2img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP2Img'
+    order: 3
+    scope: blog
+    fieldset: two
+  anything_p3check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP3Check?'
+    order: 1
+    scope: blog
+    fieldset: three
+  anything_p3entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP3Entry'
+    order: 2
+    scope: blog
+    fieldset: three
+  anything_panel3img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP3Img'
+    order: 3
+    scope: blog
+    fieldset: three
+  anything_p4check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP4Check?'
+    order: 1
+    scope: blog
+    fieldset: four
+  anything_p4entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP4Entry'
+    order: 2
+    scope: blog
+    fieldset: four
+  anything_panel4img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP4Img'
+    order: 3
+    scope: blog
+    fieldset: four
+  anything_p5check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP5Check?'
+    order: 1
+    scope: blog
+    fieldset: five
+  anything_p5entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP5Entry'
+    order: 2
+    scope: blog
+    fieldset: five
+  anything_panel5img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP5Img'
+    order: 3
+    scope: blog
+    fieldset: five
+  anything_p6check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP6Check?'
+    order: 1
+    scope: blog
+    fieldset: six
+  anything_p6entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP6Entry'
+    order: 2
+    scope: blog
+    fieldset: six
+  anything_panel6img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP6Img'
+    order: 3
+    scope: blog
+    fieldset: six
+  anything_p7check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP7Check?'
+    order: 1
+    scope: blog
+    fieldset: seven
+  anything_p7entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP7Entry'
+    order: 2
+    scope: blog
+    fieldset: seven
+  anything_panel7img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP7Img'
+    order: 3
+    scope: blog
+    fieldset: seven
+  anything_p8check:
+    type: checkbox
+    label: "Use this panel?"
+    hint: "If checked, this panel will be used in the carousel. If left unchecked, this panel will not be displayed in the carousel."
+    tag: 'IfAnythingSliderP8Check?'
+    order: 1
+    scope: blog
+    fieldset: eight
+  anything_p8entry:
+    type: entry
+    label: "Panel Entry"
+    hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
+    tag: 'AnythingSliderP8Entry'
+    order: 2
+    scope: blog
+    fieldset: eight
+  anything_panel8img:
+    type: file
+    destination: AnythingSlider/%{10}e
+    label: "Panel Image"
+    hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
+    tag: 'AnythingSliderP8Img'
+    order: 3
+    scope: blog
+    fieldset: eight

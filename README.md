@@ -48,7 +48,7 @@ This plugin, based on v1.2 of AnythingSlider, allows for blog-level changes to t
 
 ## General Use
 
-While a great deal of flexibility has been revealed in the plugin Settings, you will likely need to tweak CSS to fir your desired layout. If you plan to use this in your Movable Type site, light editing of the AnythingSlider CSS will be required. 
+While a great deal of flexibility has been revealed in the plugin Settings, you will likely need to tweak the CSS to fit your desired layout. If you plan to use this in your Movable Type site, light editing of the AnythingSlider CSS will be required. 
 
 This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin.
 
