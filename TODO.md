@@ -1,4 +1,4 @@
-# Maint Tasks To-Do #
+# Main Tasks To-Do #
 
 * Test all created tags:
   - make index template with all tags
@@ -8,7 +8,7 @@
   - header module with js links and main function
   - carousel module for image-only panels
 
-# Maint Tasks To-Do #
+## Future Tasks To-Do ##
 
 * Add for the README:
   - instructions for modifying plugin defaults
