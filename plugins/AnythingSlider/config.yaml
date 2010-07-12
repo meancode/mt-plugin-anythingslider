@@ -5,7 +5,8 @@ author_name: Ken Edwards, Meancode Media, LLC
 author_link: http://meancode.com/bgviews
 doc_link: http://meancode.com/bgviews
 plugin_link: http://github.com/meancode/mt-plugin-anythingslider
-description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
+description: Here you will modify the different panels used in AnythingSlider. To change the settings of the slider itself, click on AnythingSlider Settings below.
+static_version: 1
 
 options:
   fieldsets:
