@@ -1,4 +1,4 @@
-id: anythingslider
+id: AnythingSlider
 name: AnythingSlider
 version: 1.0
 author_name: Ken Edwards, Meancode Media, LLC
@@ -59,6 +59,14 @@ options:
     order: 3
     scope: blog
     fieldset: one
+  anything_panel1alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP1Alt'
+    order: 4
+    scope: blog
+    fieldset: one
   anything_p2check:
     type: checkbox
     label: "Use this panel?"
@@ -82,6 +90,14 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP2Img'
     order: 3
+    scope: blog
+    fieldset: two
+  anything_panel2alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP2Alt'
+    order: 4
     scope: blog
     fieldset: two
   anything_p3check:
@@ -109,6 +125,14 @@ options:
     order: 3
     scope: blog
     fieldset: three
+  anything_panel3alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP3Alt'
+    order: 4
+    scope: blog
+    fieldset: three
   anything_p4check:
     type: checkbox
     label: "Use this panel?"
@@ -132,6 +156,14 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP4Img'
     order: 3
+    scope: blog
+    fieldset: four
+  anything_panel4alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP4Alt'
+    order: 4
     scope: blog
     fieldset: four
   anything_p5check:
@@ -159,6 +191,14 @@ options:
     order: 3
     scope: blog
     fieldset: five
+  anything_panel5alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP5Alt'
+    order: 4
+    scope: blog
+    fieldset: five
   anything_p6check:
     type: checkbox
     label: "Use this panel?"
@@ -182,6 +222,14 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP6Img'
     order: 3
+    scope: blog
+    fieldset: six
+  anything_panel6alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP6Alt'
+    order: 4
     scope: blog
     fieldset: six
   anything_p7check:
@@ -209,6 +257,14 @@ options:
     order: 3
     scope: blog
     fieldset: seven
+  anything_panel7alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP7Alt'
+    order: 4
+    scope: blog
+    fieldset: seven
   anything_p8check:
     type: checkbox
     label: "Use this panel?"
@@ -232,5 +288,13 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP8Img'
     order: 3
+    scope: blog
+    fieldset: eight
+  anything_panel8alt:
+    type: text
+    label: "Alt Text"
+    hint: "The ALT tag for this image."
+    tag: 'AnythingSliderP8Alt'
+    order: 4
     scope: blog
     fieldset: eight
