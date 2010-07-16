@@ -1,0 +1,32 @@
+<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery.anythingslider.js"></script>
+
+<script type="text/javascript">
+    
+        function formatText(index, panel) {
+		  return "<$mt:AnythingSliderNavFormatText$> " + index;
+	    }
+    
+        $(function () {
+        
+            $('.anythingSlider').anythingSlider({
+                easing: "<$mt:AnythingSliderEasing$>", // Anything other than "linear" or "swing" requires the easing plugin
+                autoPlay: <$mt:AnythingSliderAutoPlay$>, // This turns off the entire FUNCTIONALY, not just if it starts running or not.
+                delay: <$mt:AnythingSliderDelay$>, // How long between slide transitions in AutoPlay mode
+                startStopped: <$mt:AnythingSliderStartStopped$>, // If autoPlay is on, this can force it to start stopped
+                animationTime: <$mt:AnythingSliderAnimation$>, // How long the slide transition takes
+                hashTags: <$mt:AnythingSliderHashTags$>, // Should links change the hashtag in the URL?
+                buildNavigation: <$mt:AnythingSliderNav$>, // If true, builds and list of anchor links to link to each slide
+                pauseOnHover: <$mt:AnythingSliderPauseHover$>, // If true, and autoPlay is enabled, the show will pause on hover
+                startText: "<$mt:AnythingSliderStartText$>", // Start text
+                stopText: "<$mt:AnythingSliderStopText$>", // Stop text
+                navigationFormatter: <mt:IfAnythingSliderNavFormatter>formatText<mt:Else>null</mt:IfAnythingSliderNavFormatter> // Details at the top of the file on this use (advanced use)
+            });
+            
+            $("#slide-jump").click(function(){
+                $('.anythingSlider').anythingSlider(8);
+            });
+            
+        });
+</script>
