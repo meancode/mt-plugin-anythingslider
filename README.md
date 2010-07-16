@@ -13,6 +13,8 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 
 This plugin is installed [just like any other Movable Type Plugin](http://www.majordojo.com/2008/12/the-ultimate-guide-to-installing-movable-type-plugins.php).
 
+Inside the `plugins` folder you will find three plugins. You will install `AnythingSliderSettings` and **either** `AnythingSlider` or `AnythingSliderPages` -- not both. You would want to install AnythingSlider Pages if you needed to link your carousel to Pages, not Entries. Note that Config Assistant 1.10 is required for AnythingSlider Pages to work.
+
 # jQuery Plugin Overview
 
 * Slides are HTML Content (can be anything)
