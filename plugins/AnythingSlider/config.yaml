@@ -62,7 +62,7 @@ options:
   anything_panel1alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP1Alt'
     order: 4
     scope: blog
@@ -95,7 +95,7 @@ options:
   anything_panel2alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP2Alt'
     order: 4
     scope: blog
@@ -128,7 +128,7 @@ options:
   anything_panel3alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP3Alt'
     order: 4
     scope: blog
@@ -161,7 +161,7 @@ options:
   anything_panel4alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP4Alt'
     order: 4
     scope: blog
@@ -194,7 +194,7 @@ options:
   anything_panel5alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP5Alt'
     order: 4
     scope: blog
@@ -227,7 +227,7 @@ options:
   anything_panel6alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP6Alt'
     order: 4
     scope: blog
@@ -260,7 +260,7 @@ options:
   anything_panel7alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP7Alt'
     order: 4
     scope: blog
@@ -293,7 +293,7 @@ options:
   anything_panel8alt:
     type: text
     label: "Alt Text"
-    hint: "The ALT tag for this image."
+    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP8Alt'
     order: 4
     scope: blog

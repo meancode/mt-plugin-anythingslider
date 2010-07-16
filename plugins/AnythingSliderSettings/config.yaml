@@ -1,4 +1,4 @@
-id: anythingslider-settings
+id: AnythingSliderSettings
 name: AnythingSlider Settings
 version: 1.0
 author_name: Ken Edwards, Meancode Media, LLC
@@ -91,7 +91,7 @@ options:
     fieldset: home
   anything_pausehover:
     type: select
-    label: "Puase on Hover?"
+    label: "Pause on Hover?"
     hint: "If true, and autoPlay is enabled, the carousel will pause on mouse hover."
     tag: 'AnythingSliderPauseHover'
     values: true,false
