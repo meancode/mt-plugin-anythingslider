@@ -1,0 +1,17 @@
+<mt:SetVar name="page_layout" value="layout-one-column" />
+<mt:SetVar name="body_class" value="mt-comment-preview" />
+<mt:SetVar name="body_onload" value="individualArchivesOnLoad(commenter_name)" />
+<mt:SetVar name="system_template" value="1" />
+<mt:SetVar name="comment_preview_template" value="1" />
+<mt:SetVar name="feedback_template" value="1" />
+<mt:SetVarBlock name="page_title">Comment on <mt:EntryTitle /></mt:SetVarBlock>
+
+<mt:Include module="Header" />
+
+<h1>Previewing your Comment</h1>
+
+<mt:Include module="Comment Detail" />
+
+<mt:Include module="Comments" />
+
+<mt:Include module="Footer" />

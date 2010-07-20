@@ -1,0 +1,14 @@
+<mt:SetVar name="page_layout" value="layout-one-column" />
+<mt:SetVar name="body_class" value="mt-dynamic-error" />
+<mt:SetVar name="system_template" value="1" />
+<mt:SetVar name="dynamic_error_template" value="1" />
+<mt:SetVarBlock name="page_title">Page Not Found</mt:SetVarBlock>
+
+<mt:Include module="Header" />
+
+<h1><mt:GetVar name="page_title" /></h1>
+<blockquote>
+<strong><mt:ErrorMessage /></strong>
+</blockquote>
+
+<mt:Include module="Footer" />

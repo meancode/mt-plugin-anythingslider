@@ -1,0 +1,46 @@
+<mt:SetVar name="page_layout" value="layout-one-column" />
+<mt:SetVar name="system_template" value="1" />
+
+<mt:If name="body_class" eq="mt-comment-confirmation">
+<mt:SetVarBlock name="page_title">Comment Submitted</mt:SetVarBlock>
+
+<mt:SetVar name="heading" value="Confirmation..." />
+
+<mt:SetVarBlock name="message">
+<p>Your comment has been submitted!</p>
+</mt:SetVarBlock>
+</mt:If>
+
+<mt:If name="body_class" eq="mt-comment-pending">
+<mt:SetVarBlock name="page_title">Comment Pending</mt:SetVarBlock>
+
+<mt:SetVar name="heading" value="Thank you for commenting." />
+
+<mt:SetVarBlock name="message">
+<p>Your comment has been received and held for approval by the blog owner.</p>
+</mt:SetVarBlock>
+
+</mt:If>
+
+<mt:If name="body_class" eq="mt-comment-error">
+<mt:SetVarBlock name="page_title">Comment Submission Error</mt:SetVarBlock>
+
+<mt:SetVar name="heading" value="$page_title" />
+
+<mt:SetVarBlock name="message">
+<p>Your comment submission failed for the following reasons:</p>
+<blockquote>
+<mt:ErrorMessage />
+</blockquote>
+</mt:SetVarBlock>
+</mt:If>
+
+<mt:Include module="Header" />
+
+<h1><mt:GetVar name="heading" /></h1>
+
+<mt:GetVar name="message" />
+
+<p>Return to the <a href="<mt:EntryLink />">original entry</a>.</p>
+
+<mt:Include module="Footer" />

@@ -1,0 +1,22 @@
+<mt:IfArchiveTypeEnabled archive_type="Monthly">
+<div class="widget-archives widget" id="monthly-archives">
+<h3 class="widget-header"><a href="<mt:BlogURL />archives.html">Archives</a></h3>
+<div class="widget-content">
+<select onchange="nav(this)">
+<option>Select a Month...</option>
+<mt:ArchiveList archive_type="Monthly">
+<option value="<mt:ArchiveLink />"><mt:ArchiveTitle /></option>
+</mt:ArchiveList>
+</select>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>
+
+<script type="text/javascript" charset="utf-8">
+function nav(sel) {
+if (sel.selectedIndex == -1) return;
+var opt = sel.options[sel.selectedIndex];
+if (opt && opt.value)
+location.href = opt.value;
+}
+</script>

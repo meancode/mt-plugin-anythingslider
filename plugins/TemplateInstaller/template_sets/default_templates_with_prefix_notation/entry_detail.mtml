@@ -1,0 +1,23 @@
+<div id="entry-<mt:EntryID />" class="entry-asset asset">
+<div class="asset-header">
+<h1 class="asset-name"><mt:EntryTitle /></h1>
+<mt:Include module="Entry Metadata" />
+</div>
+<div class="asset-content">
+<mt:IfNonEmpty tag="EntryBody">
+<div class="asset-body">
+<mt:EntryBody />
+</div>
+</mt:IfNonEmpty>
+<mt:IfNonEmpty tag="EntryMore" convert_breaks="0">
+<div id="more" class="asset-more">
+<mt:EntryMore />
+</div>
+</mt:IfNonEmpty>
+<mt:If name="entry_template">
+<mt:Include module="Categories" />
+</mt:If>
+<mt:Include module="Tags" />
+</div>
+<div class="asset-footer"></div>
+</div>

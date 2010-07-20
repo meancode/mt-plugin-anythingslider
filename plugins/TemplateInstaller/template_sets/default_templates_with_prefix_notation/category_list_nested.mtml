@@ -1,0 +1,18 @@
+<mt:IfArchiveTypeEnabled archive_type="Category"><div class="widget-categories widget">
+<h3 class="widget-header">Categories</h3>
+<div class="widget-content">
+<mt:TopLevelCategories>
+<mt:SubCatIsFirst><ul class="widget-list"></mt:SubCatIsFirst>
+<mt:IfNonZero tag="MTCategoryCount">
+<li class="widget-list-item"><a href="<mt:CategoryArchiveLink />" title="<mt:CategoryDescription />"><mt:CategoryLabel></a>
+<mt:Else>
+<li class="widget-list-item"><mt:CategoryLabel>
+</mt:Else>
+</mt:IfNonZero>
+<mt:SubCatsRecurse>
+</li>
+<mt:SubCatIsLast></ul></mt:SubCatIsLast>
+</mt:TopLevelCategories>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>

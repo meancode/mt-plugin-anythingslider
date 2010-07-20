@@ -1,0 +1,76 @@
+<mt:SetVar name="body_class" value="mt-search-results" />
+<mt:SetVar name="system_template" value="1" />
+<mt:SetVar name="search_results_template" value="1" />
+<mt:SetVar name="sidebar" value="1" />
+<mt:SetVarBlock name="page_title">Search Results</mt:SetVarBlock>
+<mt:IfStraightSearch>
+<mt:SetVar name="search_type" value="search" />
+<mt:Else>
+<mt:SetVar name="search_type" value="tag" />
+</mt:IfStraightSearch>
+<mt:Include module="Header" />
+
+<mt:IfStraightSearch>
+<div class="search-form">
+<div class="search-form-header">Search this site</div>
+<div class="search-form-content">
+<form method="post" action="<mt:CGIPath /><mt:SearchScript />" id="search-form">
+<input type="hidden" name="IncludeBlogs" value="<mt:SearchIncludeBlogs />" />
+<div>
+<input type="text" size="30" name="search" id="search" value="<mt:SearchString />" />
+<input type="submit" value="Search" />
+</div>
+<div id="search-options">
+<input type="checkbox" name="CaseSearch" /> Match case
+&#160;
+<input type="checkbox" name="RegexSearch" /> Regex search
+</div>
+</form>
+</div>
+</div>
+</mt:IfStraightSearch>
+
+<mt:SearchResults>
+<mt:BlogResultHeader>
+<h1 class="search-results-header">
+<mt:IfStraightSearch>
+Matching entries matching &ldquo;<mt:SearchString />&rdquo; from <mt:BlogName />
+</mt:IfStraightSearch>
+<mt:IfTagSearch>
+Entries tagged with &ldquo;<mt:SearchString />&rdquo; from <mt:BlogName />
+</mt:IfTagSearch>
+</h1>
+<div class="search-results-container">
+</mt:BlogResultHeader>
+<mt:Include module="Entry Summary" />
+<mt:BlogResultFooter>
+</div>
+</mt:BlogResultFooter>
+</mt:SearchResults>
+
+<mt:NoSearchResults>
+<h1 class="search-results-header">
+<mt:IfStraightSearch>
+Entries matching &ldquo;<mt:SearchString />&rdquo;
+</mt:IfStraightSearch>
+<mt:IfTagSearch>
+Entries tagged with &ldquo;<mt:SearchString />&rdquo;
+</mt:IfTagSearch>
+</h1>
+<p>No pages were found containing &ldquo;<mt:SearchString />&rdquo;.</p>
+</mt:NoSearchResults>
+
+<mt:NoSearch>
+<h1 class="search-results-header">Instructions</h1>
+<p>By default, this search engine looks for all words in any order. To search for an exact phrase, enclose the phrase in quotes:</p>
+<blockquote>
+<p><code>"movable type"</code></p>
+</blockquote>
+<p>The search engine also supports AND, OR, and NOT keywords to specify boolean expressions:</p>
+<blockquote>
+<p><code>personal OR publishing</code></p>
+<p><code>publishing NOT personal</code></p>
+</blockquote>
+</mt:NoSearch>
+
+<mt:Include module="Footer" />

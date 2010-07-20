@@ -1,0 +1,44 @@
+</div>
+</div>
+<mt:If name="sidebar">
+<mt:If name="page_layout" eq="layout-tw">
+<mt:Include module="Sidebar - 2 Column Layout" />
+<mt:Else>
+<mt:If name="page_layout" eq="layout-wt">
+<mt:Include module="Sidebar - 2 Column Layout" />
+<mt:Else>
+<mt:If name="page_layout" eq="layout-twt">
+<mt:Include module="Sidebar - 3 Column Layout" />
+<mt:Else>
+<mt:Include module="Sidebar - 3 Column Layout" />
+</mt:Else>
+</mt:If>
+</mt:Else>
+</mt:If>
+</mt:Else>
+</mt:If>
+</mt:If>
+</div>
+</div>
+<div id="footer">
+<div id="footer-inner">
+<div id="footer-content">
+<div class="widget-powered widget">
+<div class="widget-content">
+Powered by <a href="http://www.movabletype.com/"><mt:ProductName /></a>
+</div>
+</div>
+<mt:BlogIfCCLicense>
+<div class="widget-creative-commons widget">
+<div class="widget-content">
+This blog is licensed under a <a href="<mt:BlogCCLicenseURL />">Creative Commons License</a>.
+</div>
+</div>
+</mt:BlogIfCCLicense>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+template_sets:
+  page_template_only:
+    page:
+      page:
+        label: Page
+    custom:
+      page_detail:
+        label: Page Detail
+

@@ -1,0 +1,266 @@
+<div id="beta">
+<div id="beta-inner">
+<mt:If name="search_results_template">
+<mt:IfTagSearch>
+<mt:SetVar name="search_feed_param" value="tag" />
+<mt:SetVarBlock name="search_feed_description">If you use an RSS reader, you can subscribe to a feed of all future entries tagged &ldquo;<mt:SearchString />&rdquo;.</mt:SetVarBlock>
+<mt:Else>
+<mt:SetVar name="search_feed_param" value="search" />
+<mt:SetVarBlock name="search_feed_description">If you use an RSS reader, you can subscribe to a feed of all future entries matching &ldquo;<mt:SearchString />&rdquo;.</mt:SetVarBlock>
+</mt:IfTagSearch>
+<div class="widget-search-feed widget">
+<h3 class="widget-header">Feed Subscription</h3>
+<div class="widget-content">
+<p><mt:GetVar name="search_feed_description" /></p>
+<p><img src="<mt:StaticWebPath />images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="<mt:CGIPath /><mt:SearchScript />?<mt:GetVar name="search_feed_param" />=<mt:SearchString encode_url="1" />&amp;Template=feed&amp;IncludeBlogs=<mt:SearchIncludeBlogs />" title="Subscribe to feed">Subscribe to feed</a></p>
+</div>
+</div>
+<mt:IfTagSearch>
+<div class="widget-tags widget">
+<h3 class="widget-header">Tags</h3>
+<div class="widget-content">
+<ul class="widget-list">
+<mt:Tags>
+<li class="widget-list-item"><a href="<mt:TagSearchLink />"><mt:TagName /> (<mt:TagCount />)</a></li>
+</mt:Tags>
+</ul>
+</div>
+</div>
+</mt:IfTagSearch>
+</mt:If>
+<div class="widget-search widget">
+<h3 class="widget-header">Search</h3>
+<div class="widget-content">
+<form method="get" action="<mt:CGIPath /><mt:SearchScript />">
+<input type="hidden" name="IncludeBlogs" value="<mt:BlogID />" />
+<input id="search" name="search" size="20" value="<mt:SearchString encode_html="1" />" />
+<input type="submit" value="Search" />
+</form>
+</div>
+</div>
+<mt:If name="module_about_context">
+<div class="widget-welcome widget">
+<h3 class="widget-header">
+<mt:If name="entry_template">
+About this Entry
+<mt:Else>
+<mt:If name="archive_template">
+About this Archive
+</mt:If>
+</mt:If>
+<mt:If name="archive_index">
+About Archives
+</mt:If>
+</h3>
+<div class="widget-content">
+<mt:If name="archive_index">
+<p>This page contains links to all the archived content.</p>
+</mt:If>
+<mt:If name="entry_template">
+<p class="first">This page contains a single entry by <mt:EntryAuthorLink show_email="0" /> published on <em><mt:EntryDate format="%x %X" /></em>.</p>
+<mt:EntryPrevious>
+<p><a href="<mt:EntryPermalink />"><mt:EntryTitle remove_html="1" /></a> was the previous entry in this blog.</p>
+</mt:EntryPrevious>
+<mt:EntryNext>
+<p><a href="<mt:EntryPermalink />"><mt:EntryTitle remove_html="1" /></a> is the next entry in this blog.</p>
+</mt:EntryNext>
+</mt:If>
+<mt:If name="category_archive">
+<mt:If name="datebased_archive">
+<p class="first">This page is a archive of entries in the <strong><mt:CategoryLabel /></strong> category from <strong><mt:ArchiveDate format="%B %Y" /></strong>.</p>
+<mt:ArchivePrevious>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the previous archive.</p>
+</mt:ArchivePrevious>
+<mt:ArchiveNext>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the next archive.</p>
+</mt:ArchiveNext>
+<mt:Else>
+<p class="first">This page is a archive of recent entries in the <strong><mt:CategoryLabel /></strong> category.</p>
+<mt:CategoryPrevious>
+<p><a href="<mt:CategoryArchiveLink />"><mt:CategoryLabel /></a> is the previous category.</p>
+</mt:CategoryPrevious>
+<mt:CategoryNext>
+<p><a href="<mt:CategoryArchiveLink />"><mt:CategoryLabel /></a> is the next category.</p>
+</mt:CategoryNext>
+</mt:If>
+</mt:If>
+<mt:If name="author_archive">
+<mt:If name="datebased_archive">
+<p class="first">This page is a archive of recent entries written by <strong><mt:AuthorDisplayName /></strong> in <strong><mt:ArchiveDate format="%B %Y" /></strong>.</p>
+<mt:ArchivePrevious>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the previous archive.</p>
+</mt:ArchivePrevious>
+<mt:ArchiveNext>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the next archive.</p>
+</mt:ArchiveNext>
+<mt:Else>
+<p class="first">This page is a archive of recent entries written by <strong><mt:AuthorDisplayName /></strong>.</p>
+</mt:If>
+</mt:If>
+<mt:If name="datebased_only_archive">
+<p class="first">This page is an archive of entries from <strong><mt:ArchiveDate format="%B %Y" /></strong> listed from newest to oldest.</p>
+<mt:ArchivePrevious>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the previous archive.</p>
+</mt:ArchivePrevious>
+<mt:ArchiveNext>
+<p><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /></a> is the next archive.</p>
+</mt:ArchiveNext>
+</mt:If>
+<mt:If name="archive_index">
+<p>Find recent content on the <a href="<mt:BlogURL />">main index</a>.</p>
+<mt:Else>
+<p>Find recent content on the <a href="<mt:BlogURL />">main index</a> or look in the <a href="<mt:BlogURL />archives.html">archives</a> to find all content.</p>
+</mt:If>
+</div>
+</div>
+</mt:If>
+<mt:If name="module_recent_entries">
+<div class="widget-archives widget">
+<h3 class="widget-header">Recent Entries</h3>
+<div class="widget-content">
+<ul class="widget-list">
+<mt:Entries lastn="10">
+<li class="widget-list-item"><a href="<mt:EntryPermalink />"><mt:EntryTitle /></a></li>
+</mt:Entries>
+</ul>
+</div>
+</div>
+</mt:If>
+<mt:If name="main_index">
+<mt:IfNonZero tag="AssetCount">
+<mt:Assets type="image" lastn="10">
+<mt:AssetsHeader>
+<div class="widget-assets widget">
+<h3 class="widget-header">Photos</h3>
+<div class="widget-content">
+<ul class="widget-list"></mt:AssetsHeader>
+<li class="item"><a class="asset-image" href="<mt:AssetURL />"><img src="<mt:AssetThumbnailURL height="70" />" class="asset-img-thumb" alt="<mt:AssetLabel />" title="<mt:AssetLabel />" /></a></li>
+<mt:AssetsFooter></ul>
+</div>
+</div>
+</mt:AssetsFooter>
+</mt:Assets>
+</mt:IfNonZero>
+</mt:If>
+<mt:If name="module_category_archives">
+<mt:IfArchiveTypeEnabled archive_type="Category">
+<div class="widget-categories widget">
+<h3 class="widget-header">Categories</h3>
+<div class="widget-content">
+<mt:TopLevelCategories>
+<mt:SubCatIsFirst>
+<ul class="widget-list">
+</mt:SubCatIsFirst>
+<mt:IfNonZero tag="MTCategoryCount">
+<li class="widget-list-item"><a href="<mt:CategoryArchiveLink />"<mt:IfNonEmpty tag="MTCategoryDescription"> title="<mt:CategoryDescription />"</mt:IfNonEmpty>><mt:CategoryLabel /> (<mt:CategoryCount />)</a>
+<mt:Else>
+<li class="widget-list-item"><mt:CategoryLabel />
+</mt:IfNonZero>
+<mt:SubCatsRecurse>
+</li>
+<mt:SubCatIsLast>
+</ul>
+</mt:SubCatIsLast>
+</mt:TopLevelCategories>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+<mt:If name="main_index">
+<div class="widget-cloud widget">
+<h3 class="widget-header">Tag Cloud</h3>
+<div class="widget-content">
+<ul class="widget-list">
+<mt:Tags limit="20" sort_by="rank">
+<li class="rank-<mt:TagRank max="10" /> widget-list-item"><a href="<mt:TagSearchLink />"><mt:TagName /></a></li>
+</mt:Tags>
+</ul>
+</div>
+</div>
+</mt:If>
+<mt:If name="module_author_archives">
+<mt:IfArchiveTypeEnabled archive_type="Author">
+<mt:ArchiveList archive_type="Author">
+<mt:ArchiveListHeader>
+<div class="widget-authors widget">
+<h3 class="widget-header">Author Archives</h3>
+<div class="widget-content">
+<ul class="widget-list">
+</mt:ArchiveListHeader>
+<li class="widget-list-item"><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /> (<mt:ArchiveCount />)</a></li>
+<mt:ArchiveListFooter>
+</ul>
+</div>
+</div>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+<mt:If name="module_monthly_archives">
+<mt:IfArchiveTypeEnabled archive_type="Monthly">
+<mt:ArchiveList archive_type="Monthly">
+<mt:ArchiveListHeader>
+<div class="widget-archives widget">
+<h3 class="widget-header"><mt:ArchiveLabel /> <a href="<mt:BlogURL />archives.html">Archives</a></h3>
+<div class="widget-content">
+<ul class="widget-list">
+</mt:ArchiveListHeader>
+<li class="widget-list-item"><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /> (<mt:ArchiveCount />)</a></li>
+<mt:ArchiveListFooter>
+</ul>
+</div>
+</div>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+<mt:If name="module_category-monthly_archives">
+<mt:IfArchiveTypeEnabled archive_type="Category-Monthly">
+<div class="widget-categories widget">
+<h3 class="widget-header"><mt:ArchiveTitle />: Monthly Archives</h3>
+<div class="widget-content">
+<mt:ArchiveList archive_type="Category-Monthly">
+<mt:ArchiveListHeader>
+<ul class="widget-list">
+</mt:ArchiveListHeader>
+<li class="widget-list-item"><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /> (<mt:ArchiveCount />)</a></li>
+<mt:ArchiveListFooter>
+</ul>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+<mt:If name="module_author-monthly_archives">
+<mt:IfArchiveTypeEnabled archive_type="Author-Monthly">
+<mt:ArchiveList archive_type="Author-Monthly">
+<mt:ArchiveListHeader>
+<div class="widget-categories widget">
+<h3 class="widget-header"><mt:AuthorDisplayName />: Monthly Archives</h3>
+<div class="widget-content">
+<ul class="widget-list">
+</mt:ArchiveListHeader>
+<li class="widget-list-item"><a href="<mt:ArchiveLink />"><mt:ArchiveTitle /> (<mt:ArchiveCount />)</a></li>
+<mt:ArchiveListFooter>
+</ul>
+</mt:ArchiveListFooter>
+</mt:ArchiveList>
+</div>
+</div>
+</mt:IfArchiveTypeEnabled>
+</mt:If>
+<div class="widget-syndicate widget">
+<div class="widget-content">
+<img src="<mt:StaticWebPath />images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" />
+<a href="<mt:Link template="atom" />">Subscribe to this blog's feed</a>
+</div>
+</div>
+<div class="widget-powered widget">
+<div class="widget-content">
+<a href="http://www.movabletype.com/"><img src="<mt:StaticWebPath />images/mt4-bug-pbmt-white.png" alt="Powered by Movable Type <mt:Version />" width="120" height="75" /></a>
+</div>
+</div>
+</div>
+</div>
+

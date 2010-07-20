@@ -1,0 +1,22 @@
+<div id="entry-<mt:EntryID />" class="entry-asset asset">
+<div class="asset-header">
+<h2 class="asset-name"><a href="<mt:EntryPermalink />"><mt:EntryTitle /></a></h2>
+<mt:Include module="Entry Metadata" />
+</div>
+<div class="asset-content">
+<mt:IfNonEmpty tag="EntryBody">
+<div class="asset-body">
+<mt:EntryBody />
+</div>
+</mt:IfNonEmpty>
+<mt:IfTagSearch>
+<mt:Include module="Tags" />
+</mt:IfTagSearch>
+<mt:IfNonEmpty tag="EntryMore" convert_breaks="0">
+<div class="asset-more-link">
+Continue reading <a href="<mt:EntryPermalink />#more"><mt:EntryTitle /></a>.
+</div>
+</mt:IfNonEmpty>
+</div>
+<div class="asset-footer"></div>
+</div>

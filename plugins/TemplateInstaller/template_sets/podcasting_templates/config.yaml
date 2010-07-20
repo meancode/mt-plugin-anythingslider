@@ -1,0 +1,12 @@
+template_sets:
+  podcasting_templates:
+    index:
+      atom:
+        label: Atom
+        outfile: atom.xml
+        rebuild_me: 1
+      rss:
+        label: RSS
+        outfile: rss.xml
+        rebuild_me: 1
+

@@ -1,0 +1,12 @@
+template_sets:
+  template_installer_widget:
+    index:
+    individual:
+    page:
+    archive:
+    custom:
+    widget:
+      template_installer:
+        label: Template Installer
+    system:
+

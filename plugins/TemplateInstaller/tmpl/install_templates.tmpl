@@ -1,0 +1,50 @@
+<mt:include name="dialog/header.tmpl" page_title="<__trans phrase="Template Installer">">
+
+<p><__trans phrase="Install Template Sets"></p>
+
+
+<form method="post" action="<$mt:var name="script_url"$>">
+    <input type="hidden" name="__mode" value="install_blog_templates" />
+    <input type="hidden" name="blog_id" value="<$mt:var name="blog_id">" />
+    <input type="hidden" name="magic_token" value="<mt:var name="magic_token">" />
+	<input type="hidden" name="return_args" value="__mode=list_template&_type=template&filter_key=index_templates&blog_id=<$mt:var name="blog_id">" />
+
+<mtapp:setting
+    id="template_set"
+    label="<__trans phrase="Template Set">"
+    label_class="top-label"
+    hint="<__trans phrase="Choose the template set that you want to install on this blog.">"
+    show_hint="0">
+			<select name="set">
+    <mt:loop name="template_loop"><option value="<mt:var name="set">"><mt:var name="set_name"></option></mt:loop>
+			</select>
+</mtapp:setting>
+
+    <div class="actions-bar">
+        <div class="actions-bar-inner pkg actions">
+            <button
+                type="submit"
+                accesskey="s"
+                title="<__trans phrase="Continue (s)">"
+                class="primary-button"
+                ><__trans phrase="Continue"></button>
+            <button
+                onclick="closeDialog(); return false"
+                type="submit"
+                accesskey="x"
+                class="cancel"
+                title="<__trans phrase="Cancel (x)">"
+                ><__trans phrase="Cancel"></button>
+        </div>
+    </div>
+
+<mt:if name="exporter_not_installed">
+	<style>.tip {margin-top: 60px; font-size: 10pt; border: 1px solid black; padding: 10px;}</style>
+	<div class="tip">
+	<p><strong>Tip:</strong> You can export your existing templates with the <a href="http://mt-hacks.com/templateexporter.html" target="_blank">Template Exporter</a> plugin, instantly creating template sets that can be installed using Template Installer.  Great for backing up blog templates, copying templates from one blog/system to another, and more. <a href="http://mt-hacks.com/templateexporter.html" target="_blank">Click here for more information</a> [Link opens in new window]</p>
+	</div>
+</mt:if>
+
+</form>
+
+<mt:include name="dialog/footer.tmpl">

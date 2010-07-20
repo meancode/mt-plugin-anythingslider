@@ -1,0 +1,33 @@
+<mt:setvarblock name="page_title"><__trans phrase="Installing Template Set:"> <$mt:var name="set_name"$></mt:setvarblock>
+<mt:include name="dialog/header.tmpl">
+
+<mt:unless name="message_loop">
+<p class="message"><__trans phrase="No templates were found."></p>
+<mt:else>
+<ul>
+    <mt:loop name="message_loop">
+    <li><mt:var name="message"></li>
+    </mt:loop>
+</ul>
+</mt:unless>
+
+    <div class="actions-bar">
+        <div class="actions-bar-inner pkg actions">
+            <button
+                onclick="closeDialog(); return false"
+                type="submit"
+                accesskey="x"
+                title="<__trans phrase="Close (x)">"
+                ><__trans phrase="Close"></button>
+        </div>
+    </div>
+
+<mt:if name="exporter_not_installed">
+	<style>.tip {margin-top: 60px; font-size: 10pt; border: 1px solid black; padding: 10px;}</style>
+	<div class="tip">
+	<p><strong>Tip:</strong> You can export your existing templates with the <a href="http://mt-hacks.com/templateexporter.html" target="_blank">Template Exporter</a> plugin, instantly creating template sets that can be installed using Template Installer.  Great for backing up blog templates, copying templates from one blog/system to another, and more. <a href="http://mt-hacks.com/templateexporter.html" target="_blank">Click here for more information</a> [Link opens in new window]</p>
+	</div>
+</mt:if>
+
+
+<mt:include name="dialog/footer.tmpl">

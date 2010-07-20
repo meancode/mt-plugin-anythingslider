@@ -1,0 +1,24 @@
+template_sets:
+  default_templates_with_prefix_notation:
+    label: Universal Website
+    base_path: 
+    order: 300
+    templates:
+      index:
+        base_theme:
+          label: Stylesheet - Base Theme
+          outfile: base_theme.css
+          rebuild_me: 0
+        archive_index:
+          label: Archive Index
+          outfile: archief/index.php
+          rebuild_me: 1
+        styles:
+          label: Stylesheet - Main
+          outfile: styles.css
+          rebuild_me: 1
+        javascript:
+          label: JavaScript
+          outfile: mt.js
+          rebuild_me: 0
+

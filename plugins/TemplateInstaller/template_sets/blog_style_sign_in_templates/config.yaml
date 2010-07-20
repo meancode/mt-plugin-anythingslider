@@ -1,0 +1,10 @@
+template_sets:
+  blog_style_sign_in_templates:
+    custom:
+      member_login:
+        label: Member Login
+      member_signup:
+        label: Member Signup
+      member_signup_thanks:
+        label: Member Signup Thanks
+

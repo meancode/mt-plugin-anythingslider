@@ -1,0 +1,45 @@
+<mt:SetVarBlock name="body_class">mt-archive-listing mt-<mt:Var name="archive_class" /></mt:SetVarBlock>
+<mt:SetVar name="sidebar" value="1" />
+<mt:SetVar name="module_about_context" value="1" />
+
+<mt:SetVarBlock name="page_title"><mt:ArchiveTitle /> Archives</mt:SetVarBlock>
+
+<mt:Include module="Header" />
+
+<h1 class="archive-title">
+<mt:Unless name="datebased_archive">
+<mt:IfArchiveType archive_type="Category">
+Recently in <em><mt:ArchiveTitle /></em> Category
+</mt:IfArchiveType>
+<mt:IfArchiveType archive_type="Author">
+Recently by <em><mt:ArchiveTitle /></em>
+</mt:IfArchiveType>
+<mt:Else>
+<mt:GetVar name="page_title" />
+</mt:Unless>
+</h1>
+
+<mt:If name="datebased_archive">
+<mt:Entries>
+<mt:EntryTrackbackData />
+<mt:Include module="Entry Summary" />
+</mt:Entries>
+<mt:Else>
+<mt:Entries limit="auto">
+<mt:EntryTrackbackData />
+<mt:Include module="Entry Summary" />
+</mt:Entries>
+</mt:If>
+
+<div class="content-nav">
+<mt:ArchivePrevious>
+<a href="<mt:ArchiveLink />">&laquo; <mt:ArchiveTitle /></a> |
+</mt:ArchivePrevious>
+<a href="<mt:Link template="main_index" />">Main Index</a> |
+<a href="<mt:Link template="archive_index" />">Archives</a>
+<mt:ArchiveNext>
+| <a href="<mt:ArchiveLink />"><mt:ArchiveTitle /> &raquo;</a>
+</mt:ArchiveNext>
+</div>
+
+<mt:Include module="Footer" />

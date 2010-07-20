@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=<mt:PublishCharset />" />
+<meta name="generator" content="<mt:ProductName version="1" />" />
+<mt:Include identifier="styles" trim_to="0" />
+<link rel="stylesheet" href="<mt:Link template="styles" />" type="text/css" />
+<mt:If name="main_template">
+<link rel="alternate" type="application/atom+xml" title="Atom" href="<mt:Link template="atom" />" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<mt:Link template="rss" />" />
+</mt:If>
+<mt:If name="search_results_template">
+<link rel="alternate" type="application/atom+xml" title="<mt:BlogName encode_html="1" />: Search Results" href="<mt:CGIPath /><mt:SearchScript />?<mt:GetVar name="search_type" />=<mt:SearchString encode_url="1" />&amp;Template=feed&amp;IncludeBlogs=<mt:SearchIncludeBlogs />" />
+</mt:If>
+<title>
+<mt:If name="entry_template">
+<mt:GetVar name="page_title" /> - <mt:BlogName encode_html="1" />
+<mt:Else>
+<mt:If name="main_index">
+<mt:BlogName encode_html="1" />
+<mt:Else>
+<mt:BlogName encode_html="1" />: <mt:GetVar name="page_title" />
+</mt:If>
+</mt:If>
+</title>
+<mt:If name="main_index">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<mt:Link template="rsd" />" />
+</mt:If>
+<mt:If name="main_template">
+<mt:Unless name="main_index">
+<link rel="start" href="<mt:BlogURL />" title="Home" />
+</mt:Unless>
+</mt:If>
+<mt:If name="datebased_archive">
+<mt:ArchivePrevious><link rel="prev" href="<mt:ArchiveLink />" title="<mt:ArchiveTitle encode_html="1" />" /></mt:ArchivePrevious>
+<mt:ArchiveNext><link rel="next" href="<mt:ArchiveLink />" title="<mt:ArchiveTitle encode_html="1" />" /></mt:ArchiveNext>
+</mt:If>
+<mt:If name="entry_template">
+<mt:EntryPrevious><link rel="prev" href="<mt:EntryPermalink />" title="<mt:EntryTitle encode_html="1" />" /></mt:EntryPrevious>
+<mt:EntryNext><link rel="next" href="<mt:EntryPermalink />" title="<mt:EntryTitle encode_html="1" />" /></mt:EntryNext>
+</mt:If>
+<mt:If name="feedback_template">
+<mt:EntryTrackbackData />
+<script type="text/javascript" src="<mt:Link template="javascript" />"></script>
+</mt:If>
+<mt:If name="main_template">
+<mt:CCLicenseRDF />
+</mt:If>
+</head>
+<body class="<mt:If name="body_class"><mt:GetVar name="body_class" /> </mt:If><mt:GetVar name="page_layout" default="layout-wtt" />"<mt:If name="body_onload"> onload="<mt:GetVar name="body_onload" />"</mt:If>>
+<div id="container">
+<div id="container-inner">
+<div id="header">
+<div id="header-inner">
+<div id="header-content">
+<mt:If name="main_index">
+<h1 id="header-name"><a href="<mt:BlogURL />" accesskey="1"><mt:BlogName encode_html="1" /></a></h1>
+<h2 id="header-description"><mt:BlogDescription /></h2>
+<mt:Else>
+<div id="header-name"><a href="<mt:BlogURL />" accesskey="1"><mt:BlogName encode_html="1" /></a></div>
+<div id="header-description"><mt:BlogDescription /></div>
+</mt:If>
+</div>
+</div>
+</div>
+<div id="content">
+<div id="content-inner">
+<div id="alpha">
+<div id="alpha-inner">

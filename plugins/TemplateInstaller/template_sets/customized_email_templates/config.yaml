@@ -1,0 +1,14 @@
+template_sets:
+  customized_email_templates:
+    index:
+    individual:
+    page:
+    archive:
+    custom:
+      newcommenttmpl:
+        label: new-comment.tmpl
+      newpingtmpl:
+        label: new-ping.tmpl
+    widget:
+    system:
+

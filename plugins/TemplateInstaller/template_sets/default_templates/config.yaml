@@ -1,0 +1,86 @@
+template_sets:
+  default_templates:
+    index:
+      archive_index:
+        label: Archive Index
+        outfile: archives.html
+        rebuild_me: 1
+      main_index:
+        label: Main Index
+        outfile: index.html
+        rebuild_me: 1
+      styles:
+        label: Stylesheet - Main
+        outfile: styles.css
+        rebuild_me: 1
+      javascript:
+        label: JavaScript
+        outfile: mt.js
+        rebuild_me: 1
+      rsd:
+        label: RSD
+        outfile: rsd.xml
+        rebuild_me: 1
+      atom:
+        label: Atom
+        outfile: atom.xml
+        rebuild_me: 1
+      rss:
+        label: RSS
+        outfile: rss.xml
+        rebuild_me: 1
+      base_theme:
+        label: Stylesheet - Base Theme
+        outfile: base_theme.css
+        rebuild_me: 1
+    individual:
+      entry:
+        label: Entry
+    page:
+      page:
+        label: Page
+    archive:
+      entry_listing:
+        label: Entry Listing
+    custom:
+      comment_detail:
+        label: Comment Detail
+      entry_summary:
+        label: Entry Summary
+      sidebar_3col:
+        label: Sidebar - 3 Column Layout
+      categories:
+        label: Categories
+      comments:
+        label: Comments
+      footer:
+        label: Footer
+      tags:
+        label: Tags
+      sidebar_2col:
+        label: Sidebar - 2 Column Layout
+      entry_metadata:
+        label: Entry Metadata
+      trackbacks:
+        label: TrackBacks
+      comment_form:
+        label: Comment Form
+      page_detail:
+        label: Page Detail
+      header:
+        label: Header
+      entry_detail:
+        label: Entry Detail
+    widget:
+    system:
+      comment_response:
+        label: Comment Response
+      popup_image:
+        label: Popup Image
+      dynamic_error:
+        label: Dynamic Error
+      comment_preview:
+        label: Comment Preview
+      search_results:
+        label: Search Results
+

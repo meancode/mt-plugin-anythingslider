@@ -1,0 +1,12 @@
+<div class="asset-meta">
+<span class="byline">
+<mt:IfNonEmpty tag="EntryAuthorDisplayName">
+By <mt:EntryAuthorLink show_email="0" /> on <mt:EntryDate format="%x %X" />
+<mt:Else>
+<mt:EntryDate format="%x %X" />
+</mt:IfNonEmpty>
+</span>
+<span class="separator">|</span> <a class="permalink" href="<mt:EntryPermalink />">Permalink</a>
+<mt:IfCommentsActive>| <a href="<mt:EntryPermalink />#comments">Comments (<mt:EntryCommentCount />)</a></mt:IfCommentsActive>
+<mt:IfPingsActive>| <a href="<mt:EntryPermalink />#trackback">TrackBacks (<mt:EntryTrackbackCount />)</a></mt:IfPingsActive>
+</div>

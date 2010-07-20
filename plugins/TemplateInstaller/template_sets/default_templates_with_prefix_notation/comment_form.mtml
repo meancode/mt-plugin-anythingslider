@@ -1,0 +1,56 @@
+<mt:EntryIfCommentsOpen>
+<div class="comments-open" id="comments-open">
+<h2 class="comments-open-header">Leave a comment</h2>
+<div class="comments-open-content">
+<mt:IfRegistrationAllowed>
+<div id="comment-form-external-auth">
+<script type="text/javascript">
+<!--
+<mt:If name="comment_preview_template">is_preview = true;</mt:If>
+writeCommenterGreeting(commenter_name, <mt:EntryID />, <mt:EntryBlogID />, commenter_id, commenter_url);
+//-->
+</script>
+</div>
+</mt:IfRegistrationAllowed>
+<form method="post" action="<mt:CGIPath /><mt:CommentScript />" name="comments_form" id="comments-form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+<input type="hidden" name="static" value="1" />
+<input type="hidden" name="entry_id" value="<mt:EntryID />" />
+<input type="hidden" name="__lang" value="<mt:BlogLanguage />" />
+<div id="comments-open-data">
+<div id="comment-form-name">
+<label for="comment-author">Name</label>
+<input id="comment-author" name="author" size="30" value="<mt:If name="comment_preview_template"><mt:CommentAuthor encode_html="1" /></mt:If>" />
+</div>
+<div id="comment-form-email">
+<label for="comment-email">Email Address</label>
+<input id="comment-email" name="email" size="30" value="<mt:If name="comment_preview_template"><mt:CommentEmail encode_html="1" /></mt:If>" />
+</div>
+<div id="comment-form-url">
+<label for="comment-url">URL</label>
+<input id="comment-url" name="url" size="30" value="<mt:If name="comment_preview_template"><mt:CommentURL encode_html="1" /></mt:If>" />
+</div>
+<div id="comment-form-remember-me">
+<label for="comment-bake-cookie"><input type="checkbox" id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+Remember personal info?</label>
+</div>
+</div>
+<div id="comments-open-text">
+<label for="comment-text">Comments <mt:IfAllowCommentHTML>(You may use HTML tags for style)</mt:IfAllowCommentHTML></label>
+<textarea id="comment-text" name="text" rows="15" cols="50"><mt:If name="comment_preview_template"><mt:CommentBody autolink="0" sanitize="0" convert_breaks="0" encode_html="1" /></mt:If></textarea>
+</div>
+<mt:IfNonEmpty tag="MTCaptchaFields">
+<mt:IfCommentsAccepted><mt:IfRegistrationAllowed><mt:Else><mt:CaptchaFields /></mt:IfRegistrationAllowed></mt:IfCommentsAccepted>
+<div id="comments-open-captcha">
+</div>
+</mt:IfNonEmpty>
+<div id="comments-open-footer">
+<input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+<input type="submit" accesskey="s" name="post" id="comment-submit" value="Submit" />
+<mt:If name="comment_preview_template">
+<input type="button" name="cancel" id="comment-cancel" value="Cancel" onclick="window.location='<mt:EntryPermalink />'" />
+</mt:If>
+</div>
+</form>
+</div>
+</div>
+</mt:EntryIfCommentsOpen>
