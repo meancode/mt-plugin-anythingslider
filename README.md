@@ -8,12 +8,15 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 
 * Movable Type 4.1 or higher
 * [Config Assistant](http://github.com/endevver/mt-plugin-configassistant)
+* [TemplateInstaller](http://mt-hacks.com/templateinstaller.html) (Included)
 
 # Installation
 
 This plugin is installed [just like any other Movable Type Plugin](http://www.majordojo.com/2008/12/the-ultimate-guide-to-installing-movable-type-plugins.php).
 
-Inside the `plugins` folder you will find three plugins. You will install `AnythingSliderSettings` and **either** `AnythingSlider` or `AnythingSliderPages` -- not both. You would want to install AnythingSlider Pages if you needed to link your carousel to Pages, not Entries. Note that Config Assistant 1.10 is required for AnythingSlider Pages to work.
+* `TemplateInstaller` - Required to easily install all AnythingSlider templates and widgets. If you have TemplateInstaller installed, navigate to `TemplateInstaller/template_sets` and copy the `anythingslider` template set to the same folder on your server.
+* `AnythingSliderSettings` - Required as this plugin controls all the options of the AnythingSlider jQuery script.
+* `AnythingSlider` *or* `AnythingSliderPages` - Install one or the other, **not both**. If your carousel needs to link to Pages and not Entries, install AnythingSliderPages.
 
 # jQuery Plugin Overview
 
@@ -57,3 +60,17 @@ This project was started so it is easy to use the same code base (AnythingSlider
 ## Theme Designers
 
 If you are designing a Melody or Movable Type 4 theme, and want to use a jQuery-based carousel that offers a lot of features, AnythingSlider works great. You can easily modify the defaults in this plugin, .mtml templates and CSS to fit your liking, then deploy AnythingSlider with your theme. Just fork this repository and make your changes.
+
+# About Meancode Media, LLC
+
+We provide web design and development, as well as hosting services. Specializing in Movable Type and blog/CMS design, our goal is to provide users with easy to manage web sites.
+
+[http://www.meancode.com/](http://www.meancode.com/)
+
+# Copyright
+
+Copyright 2010, Meancode Media, LLC. All rights reserved.
+
+# License
+
+This plugin is licensed under the same terms as Perl itself.
