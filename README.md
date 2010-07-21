@@ -77,7 +77,7 @@ Add this Template Module to your template, usually in a `HTML Head` or `Header` 
 
 	<$mt:Include module="AnythingSlider HTML Head"$>
 	
-AnythingSlider has installed both Template Modules and Widgets for the carousel, as you people design their Index and Archive templates differently. AnythingSlider also provides a number of different formats to display the carousel, the first of which is a simple image based slider. If using Widgets, go to Design > Widgets and add the appropriate AnythingSlider Widget to your Widget Set. If using Template Modules, add it to your blog, like this:
+AnythingSlider has installed both Template Modules and Widgets for the carousel, as people design their Index and Archive templates differently. AnythingSlider also provides a number of different formats to display the carousel, the first of which is a simple image based slider. If using Widgets, go to Design > Widgets and add the appropriate AnythingSlider Widget to your Widget Set. If using Template Modules, add it to your blog, like this:
 
 	<$mt:Include module="AnythingSlider Images Only"$>
 
