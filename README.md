@@ -15,13 +15,22 @@ This new AnythingSlider is an attempt at bringing together the functionality of 
 This plugin is installed [just like any other Movable Type Plugin](http://www.majordojo.com/2008/12/the-ultimate-guide-to-installing-movable-type-plugins.php).
 
 * TemplateInstaller - Required to easily install all AnythingSlider templates and widgets. If you have TemplateInstaller installed, navigate to `TemplateInstaller/template_sets` and copy the `anythingslider` template set to the same folder on your server.
+
 * AnythingSliderSettings - Required as this plugin controls all the options of the AnythingSlider jQuery script.
+
 * AnythingSlider *or* AnythingSliderPages - Install one or the other, **not both**. If your carousel needs to link to Pages and not Entries, install AnythingSliderPages.
 
 ## Plugin Setup
 
 Navigate to Design > Templates of the Blog you wish to use AnythingSlider and click *Install Templates* under the Actions section of the sidebar. Select the AnythingSlider template set and click Continue - this must be done on every Blog you want to use AnythingSlider in. You may need to refresh the Templates page to see the new templates.  
 
+Edit the Template Module `AnythingSlider HTML Head` only if you have jQuery added to your template already. If that is the case, delete this line:
+
+	<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery-1.4.2.min.js"></script>
+	
+Add this Template Module to your template, usually in a `HTML Head` or `Header` Template Module in your blog.
+
+	<$mt:Include module="AnythingSlider HTML Head"$>
 
 # jQuery Plugin Overview
 
