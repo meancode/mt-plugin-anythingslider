@@ -1,9 +1,10 @@
 id: AnythingSliderSettings
 name: AnythingSlider Settings
-version: 1.0
+version: 1.3.5
 author_name: Ken Edwards, Meancode Media, LLC
 author_link: http://meancode.com/bgviews
 doc_link: http://meancode.com/bgviews
+icon: icon.gif
 plugin_link: http://github.com/meancode/mt-plugin-anythingslider
 description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
 
@@ -12,15 +13,11 @@ options:
     home:
       label: 'Slider Settings'
       order: 1
+      hint: "Remember to rebuild the site once you change any of these settings.<br><br>"
     images:
       label: 'Slider Images'
       order: 2
-    feature:
-      label: 'Feature Spotlight'
-    feed:
-      label: 'Feed Options'
-    section:
-      label: 'Section Pages Top Story'
+      hint: "Remember to rebuild the site once you change any of these settings.<br><br>"
   anything_easing:
     type: select
     label: "Easing"
@@ -34,7 +31,7 @@ options:
   anything_autoplay:
     type: select
     label: "Auto Play"
-    hint: "This turns off the entire FUNCTIONALITY, not just if it starts running or not."
+    hint: "This turns off the entire FUNCTIONALITY, not just if it starts running or not. This includes rendering the Start/Stop button, too."
     tag: 'AnythingSliderAutoPlay'
     values: true,false
     default: true
@@ -99,14 +96,6 @@ options:
     order: 8
     scope: blog
     fieldset: home
-  anything_hidetoggle:
-    type: checkbox
-    label: "Hide Toggle?"
-    hint: "If checked, the Start/Stop toggle button will be hidden from view."
-    tag: 'IfAnythingSliderHideToggle?'
-    order: 9
-    scope: blog
-    fieldset: home
   anything_starttext:
     type: text
     label: "Start Text"
@@ -142,12 +131,58 @@ options:
     order: 13
     scope: blog
     fieldset: home
-  anything_hidearrows:
-    type: checkbox
-    label: "Hide Arrows?"
-    hint: "If checked, the back/forward arrows will be hidden from view."
-    tag: 'IfAnythingSliderHideArrows?'
+  anything_forwardtext:
+    type: text
+    label: "Forward Text"
+    hint: "Link text used to move the slider forward."
+    tag: 'AnythingSliderForwardText'
+    default: '&raquo;'
     order: 14
+    scope: blog
+    fieldset: home
+  anything_backtext:
+    type: text
+    label: "Back Text"
+    hint: "Link text used to move the slider back."
+    tag: 'AnythingSliderBackText'
+    default: '&laquo;'
+    order: 15
+    scope: blog
+    fieldset: home
+  anything_height:
+    type: text
+    label: "Height"
+    hint: "Override the default CSS height; leave blank for null."
+    tag: 'AnythingSliderHeight'
+    order: 16
+    scope: blog
+    fieldset: home
+  anything_width:
+    type: text
+    label: "Width"
+    hint: "Override the default CSS width; leave blank for null."
+    tag: 'AnythingSliderWidth'
+    order: 17
+    scope: blog
+    fieldset: home
+  anything_buildarrows:
+    type: select
+    label: "Build Arrows?"
+    hint: "If true, builds the forwards and backwards buttons."
+    tag: 'AnythingSliderBuildArrows'
+    values: true,false
+    default: true
+    order: 18
+    scope: blog
+    fieldset: home
+  anything_resizepanel:
+    type: select
+    label: "Resize Panel?"
+    hint: "If true, solitary images in the panel will expand to fit the panel."
+    tag: 'AnythingSliderResizePanel'
+    values: true,false
+    default: true
+    order: 19
     scope: blog
     fieldset: home
   anything_arrowsimg:
