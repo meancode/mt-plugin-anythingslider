@@ -13,11 +13,11 @@ options:
     home:
       label: 'Slider Settings'
       order: 1
-      hint: "Remember to rebuild the site once you change any of these settings.<br><br>"
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     images:
       label: 'Slider Images'
       order: 2
-      hint: "Remember to rebuild the site once you change any of these settings.<br><br>"
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
   anything_easing:
     type: select
     label: "Easing"

@@ -1,9 +1,10 @@
 id: AnythingSlider
 name: AnythingSlider
-version: 1.0
+version: 1.3.5
 author_name: Ken Edwards, Meancode Media, LLC
 author_link: http://meancode.com/bgviews
 doc_link: http://meancode.com/bgviews
+icon: icon.gif
 plugin_link: http://github.com/meancode/mt-plugin-anythingslider
 description: Here you will modify the different panels used in AnythingSlider. To change the settings of the slider itself, click on AnythingSlider Settings below.
 static_version: 1
@@ -13,27 +14,35 @@ options:
     one:
       label: 'Panel 1 Options'
       order: 1
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     two:
       label: 'Panel 2 Options'
       order: 2
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     three:
       label: 'Panel 3 Options'
       order: 3
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     four:
       label: 'Panel 4 Options'
       order: 4
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     five:
       label: 'Panel 5 Options'
       order: 5
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     six:
       label: 'Panel 6 Options'
       order: 6
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     seven:
       label: 'Panel 7 Options'
       order: 7
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
     eight:
       label: 'Panel 8 Options'
       order: 8
+      hint: "Remember to rebuild the site INDEXES ONLY once you change any of these settings.<br><br>"
   anything_p1check:
     type: checkbox
     label: "Use this panel?"
