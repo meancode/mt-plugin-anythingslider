@@ -51,12 +51,22 @@ options:
     order: 1
     scope: blog
     fieldset: one
+  anything_p1type:
+    type: select
+    label: "Start Stopped?"
+    hint: "If autoPlay is on, this can force it to start stopped."
+    tag: 'IfAnythingSliderP1Type'
+    values: Default,Breaking,Updated,Featured
+    default: Default
+    order: 2
+    scope: blog
+    fieldset: one
   anything_p1entry:
     type: entry
     label: "Panel Entry"
     hint: "The entry associated and linked from this panel. Click Choose Entry and pick an entry from the list of your blog entries, or use the search box."
     tag: 'AnythingSliderP1Entry'
-    order: 2
+    order: 3
     scope: blog
     fieldset: one
   anything_panel1img:
@@ -65,7 +75,7 @@ options:
     label: "Panel Image"
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP1Img'
-    order: 3
+    order: 4
     scope: blog
     fieldset: one
   anything_panel1alt:
@@ -73,7 +83,7 @@ options:
     label: "Alt Text"
     hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
     tag: 'AnythingSliderP1Alt'
-    order: 4
+    order: 5
     scope: blog
     fieldset: one
   anything_p2check:
