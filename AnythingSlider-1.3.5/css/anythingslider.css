@@ -16,18 +16,18 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .anyt
 /****** SET COLORS HERE *******/
 /* Active */
 div.anythingSlider.activeSlider .thumbNav a.cur, div.anythingSlider.activeSlider .thumbNav a {
-	background-color: #7C9127;
+	background-color: #AAAAAA;
 }
 div.anythingSlider.activeSlider .anythingWindow {
-	border-color: #7C9127;
+	border-color: #AAAAAA;
 }
 /* Inactive */
 div.anythingSlider .thumbNav a.cur, div.anythingSlider .thumbNav a {
-	background: #777;
+	background: #AAAAAA;
 }
 div.anythingSlider .anythingWindow {
-	border-top: 3px solid #777;
-	border-bottom: 3px solid #777;
+	border-top: 3px solid #AAAAAA;
+	border-bottom: 3px solid #AAAAAA;
 }
 /* Set second slider panel sizes */
 #slider2 .panel1 { width: 500px; height: 350px; }
@@ -37,6 +37,7 @@ div.anythingSlider .anythingWindow {
 #slider2 .panel5 { width: 680px; height: 317px; }
 
 /**** DO NOT CHANGE BELOW THIS LINE ****/
+
 div.anythingSlider .anythingWindow, div.anythingSlider .anythingWindow ul li {
 	width: 100%;
 }
@@ -123,5 +124,5 @@ div.anythingSlider .start-stop {
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 }
-div.anythingSlider .start-stop.playing { background-color: red; }
+div.anythingSlider .start-stop.playing { background-color: #919191; }
 div.anythingSlider .start-stop:hover { background-image: none; }
