@@ -1,0 +1,47 @@
+<$mt:EntryTrackbackData$>
+<div id="entry-<$mt:EntryID$>" class="entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title"><a href="<$mt:EntryPermalink$>" rel="bookmark">
+      <$mt:EntryTitle$>
+      </a></h2>
+    <$mt:Include module="Entry Metadata Lite"$>
+  </div>
+  <div class="asset-content entry-content">
+    <div class="asset-body">
+      <$mt:EntryBody remove_html="1" smarttrim="-100","…"$>
+    </div>
+	<mt:If tag="EntryCategory" eq="Sports">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/sports/" style="color:#243f8f;">More articles in BG News Sports &raquo;</a><br>
+		<a href="http://bgnewssports.com/" style="color:#243f8f;">Visit our Sports Blog &raquo;</a>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="Entertainment">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/entertainment/" style="color:#243f8f;">More articles in BG News Pulse &raquo;</a><br>
+		<a href="http://blogs.bgnews.com/pulse/" style="color:#243f8f;">Visit our Culture Shock Blog &raquo;</a>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="City">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/city/" style="color:#243f8f;">More articles in BG News City &raquo;</a><br>
+		<a href="http://bgviewsnetwork.com/housing/" style="color:#243f8f;">Off-Campus Student Services Community &raquo;</a>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="Campus">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/campus/" style="color:#243f8f;">More articles in BG News Campus &raquo;</a><br>
+		<a href="http://bgnews.com/rant/" style="color:#243f8f;">Rant &amp; Rave in Falcon Screech &raquo;</a>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="In Focus">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/infocus/" style="color:#243f8f;">More articles in BG News In Focus &raquo;</a><br>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="Opinion">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/opinion/" style="color:#243f8f;">More articles in BG News Forum &raquo;</a><br>
+		<a href="http://bgnews.com/opinion/letters/" style="color:#243f8f;">Read recent Letters to the Editor &raquo;</a>
+	</mt:If>
+	<mt:If tag="EntryCategory" eq="Regional">
+	    <hr noshade style="background-color:#9DA8C8; margin-top:10px; margin-bottom:10px;">
+		<a href="http://bgnews.com/wire/" style="color:#243f8f;">More Regional coverage in BG News &raquo;</a><br>
+	</mt:If>
+  </div>
+</div>

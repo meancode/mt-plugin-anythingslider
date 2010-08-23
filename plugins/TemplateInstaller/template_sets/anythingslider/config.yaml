@@ -1,0 +1,16 @@
+template_sets:
+  anythingslider:
+    label: AnythingSlider
+    base_path: templates
+    order: 1000
+    templates:
+      index:
+        anythingslider_stylesheet:
+          label: AnythingSlider Stylesheet
+          outfile: anythingslider.css
+          rebuild_me: 1
+      custom:
+        anythingslider_html_head:
+          label: AnythingSlider HTML Head
+        anythingslider_images_only:
+          label: AnythingSlider Images Only
