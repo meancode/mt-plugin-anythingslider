@@ -66,14 +66,6 @@ options:
     order: 4
     scope: blog
     fieldset: one
-  anything_panel1alt:
-    type: text
-    label: "Alt Text"
-    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
-    tag: 'AnythingSliderP1Alt'
-    order: 5
-    scope: blog
-    fieldset: one
   anything_p2check:
     type: checkbox
     label: "Use this panel?"
@@ -107,14 +99,6 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP2Img'
     order: 4
-    scope: blog
-    fieldset: two
-  anything_panel2alt:
-    type: text
-    label: "Alt Text"
-    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
-    tag: 'AnythingSliderP2Alt'
-    order: 5
     scope: blog
     fieldset: two
   anything_p3check:
@@ -152,14 +136,6 @@ options:
     order: 4
     scope: blog
     fieldset: three
-  anything_panel3alt:
-    type: text
-    label: "Alt Text"
-    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
-    tag: 'AnythingSliderP3Alt'
-    order: 5
-    scope: blog
-    fieldset: three
   anything_p4check:
     type: checkbox
     label: "Use this panel?"
@@ -195,14 +171,6 @@ options:
     order: 4
     scope: blog
     fieldset: four
-  anything_panel4alt:
-    type: text
-    label: "Alt Text"
-    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
-    tag: 'AnythingSliderP4Alt'
-    order: 5
-    scope: blog
-    fieldset: four
   anything_p5check:
     type: checkbox
     label: "Use this panel?"
@@ -220,7 +188,7 @@ options:
     default: Standard
     order: 2
     scope: blog
-    fieldset: two
+    fieldset: five
   anything_p5entry:
     type: entry
     label: "Panel Entry"
@@ -236,13 +204,5 @@ options:
     hint: "The image used for this panel. You should use GIF, JPEG, or PNG files only. Image will be automatically cropped if too large."
     tag: 'AnythingSliderP5Img'
     order: 4
-    scope: blog
-    fieldset: five
-  anything_panel5alt:
-    type: text
-    label: "Alt Text"
-    hint: "The ALT tag for this image. If left empty, the ALT tag will be the Entry title."
-    tag: 'AnythingSliderP5Alt'
-    order: 5
     scope: blog
     fieldset: five
