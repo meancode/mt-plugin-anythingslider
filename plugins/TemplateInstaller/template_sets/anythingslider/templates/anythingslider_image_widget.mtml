@@ -1,6 +1,5 @@
-<div class="anythingSlider">
-  <div class="wrapper">
-    <ul>
+  <!-- AnythingSlider #1 -->
+<ul id="slider1">
 <mt:IfAnythingSliderP1Check><!-- Panel 1 -->
       <mt:SetVarBlock name="anything_p1entry"><$mt:AnythingSliderP1Entry$></mt:SetVarBlock>
       <mt:SetVarBlock name="anything_panel1img"><$mt:AnythingSliderP1Img$></mt:SetVarBlock>
@@ -33,7 +32,5 @@
       <mt:SetVarBlock name="anything_p8entry"><$mt:AnythingSliderP8Entry$></mt:SetVarBlock>
       <mt:SetVarBlock name="anything_panel8img"><$mt:AnythingSliderP8Img$></mt:SetVarBlock>
       <mt:Entries id="$anything_p8entry"><li><a href="<$mt:EntryPermalink$>" rel="bookmark"><mt:Asset id="$anything_panel8img"><img src="<mt:AssetURL>" alt="<mt:If tag="AnythingSliderP8Alt"><$mt:AnythingSliderP8Alt$><mt:Else><$mt:EntryTitle remove_html="1"$></mt:If>" /></mt:Asset></a></li></mt:Entries></mt:IfAnythingSliderP8Check>
-    </ul>
-  </div>
-</div>
-<!-- END AnythingSlider -->
+</ul>
+<!-- // END AnythingSlider #1 -->

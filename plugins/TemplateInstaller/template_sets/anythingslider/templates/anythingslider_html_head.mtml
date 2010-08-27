@@ -1,6 +1,7 @@
-<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery.easing.1.2.js"></script>
-<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery.anythingslider.js"></script>
+<script type="text/javascript" src="<mt:PluginStaticWebPath component="AnythingSlider">jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="<mt:PluginStaticWebPath component="AnythingSlider">jquery.easing.1.2.js"></script>
+<script type="text/javascript" src="<mt:PluginStaticWebPath component="AnythingSlider">jquery.anythingslider.js"></script>
+<link rel="stylesheet" href="<$mt:BlogURL$>anythingslider.css" type="text/css" media="screen"/>
 
 <script type="text/javascript">
         function formatText(index, panel) {
@@ -24,7 +25,8 @@
                 buildArrows: <$mt:AnythingSliderBuildArrows$>, // If true, builds the forwards and backwards buttons
                 resizePanel: <$mt:AnythingSliderResizePanel$> // If true, solitary images in the panel will expand to fit the panel
             });
-            
+
+            // Below links are static, not managed by Movable Type... yet.
 			$("#slide-jump").click(function(){
 				$('.anythingSlider').eq(1).anythingSlider(4);
 				return false;

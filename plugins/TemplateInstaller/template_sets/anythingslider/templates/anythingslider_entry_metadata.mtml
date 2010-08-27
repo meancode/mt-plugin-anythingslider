@@ -1,0 +1,14 @@
+<div class="asset-meta">
+    <span class="byline">
+        By <span class="vcard author">
+        <a href="<$mt:Var name="profile_view_url" encode_html="1"$><$mt:EntryAuthorID$>"><$mt:EntryAuthorDisplayName$></a>
+        </span>
+    </span>
+<mt:Unless name="hide_counts" eq="1">
+    <mt:IfCommentsActive><a href="<$mt:EntryPermalink$>#comments" class="entry-meta-comments" title="<$mt:EntryCommentCount singular="1 Comment" plural="# Comments"$>"><$mt:EntryCommentCount$></a></mt:IfCommentsActive>
+    <a href="javascript:void(0)" title="Vote/Favorite this post" onclick="return mtScore(<$mt:EntryID$>)" id="scoring-id-<$mt:EntryID$>" class="scoring">
+        <span id="scoring-vote-<$mt:EntryID$>" class="scoring-vote">Vote</span>
+        <span id="scoring-score-<$mt:EntryID$>" class="scoring-score"><$mt:EntryScore namespace="community_pack_recommend" singular="1" plural="#" none="0"$></span>
+        <span id="scoring-score-label-<$mt:EntryID$>" class="scoring-score-label"><$mt:EntryScore namespace="community_pack_recommend" singular="&nbsp;" plural="&nbsp;" none="&nbsp;"$></span>
+    </a>
+</mt:Unless>

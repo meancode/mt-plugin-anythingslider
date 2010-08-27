@@ -66,13 +66,15 @@ div.anythingSlider .arrow {
 	position: absolute;
 	display: block;
 }
+
+<mt:SetVarBlock name="anything_arrowsimg"><$mt:AnythingSliderArrowsImg$></mt:SetVarBlock>
 div.anythingSlider .arrow a {
 	display: block;
 	height: 120px;
 	margin-top: -60px;
 	width: 45px;
 	text-align: center;
-	background: url(../images/arrows.png) no-repeat;
+	background: url(<mt:Asset id="$anything_arrowsimg"><mt:AssetURL></mt:Asset>) no-repeat;
 	text-indent: -9999px;
 }
 div.anythingSlider .forward { right: 0; }
@@ -82,6 +84,7 @@ div.anythingSlider .back a { background-position: -88px -40px; }
 div.anythingSlider .forward a:hover { background-position: 0 -240px; }
 div.anythingSlider .back a:hover { background-position: -88px -240px; }
 
+<mt:SetVarBlock name="anything_thumbimg"><$mt:AnythingSliderThumbImg$></mt:SetVarBlock>
 div.anythingSlider .thumbNav { margin: 0; }
 div.anythingSlider .thumbNav li { display: inline; }
 div.anythingSlider .thumbNav a {
@@ -92,7 +95,7 @@ div.anythingSlider .thumbNav a {
 	padding: 2px 8px;
 	height: 18px;
 	margin: 0 5px 0 0;
-	background-image: url(../images/cellshade.png);
+	background-image: url(<mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset>);
 	background-repeat: repeat-x;
 	text-align: center;
 	-moz-border-radius-bottomleft: 5px;
@@ -104,7 +107,7 @@ div.anythingSlider .thumbNav a:hover { background-image: none; }
 
 div.anythingSlider .start-stop {
 	z-index: 10;
-	background: green url(../images/cellshade.png) repeat-x center top;
+	background: green url(<mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset>) repeat-x center top;
 	color: white;
 	padding: 2px 5px;
 	width: 40px;

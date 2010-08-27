@@ -10,7 +10,13 @@ template_sets:
           outfile: anythingslider.css
           rebuild_me: 1
       custom:
+        anythingslider_article_slider:
+          label: AnythingSlider Article Slider
+        anythingslider_entry_metadata:
+          label: AnythingSlider Entry Metadata
+        anythingslider_entry_summary:
+          label: AnythingSlider Entry Summary
         anythingslider_html_head:
           label: AnythingSlider HTML Head
-        anythingslider_images_only:
-          label: AnythingSlider Images Only
+        anythingslider_image_slider:
+          label: AnythingSlider Image Slider
