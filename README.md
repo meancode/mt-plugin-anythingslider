@@ -1,38 +1,45 @@
-# AnythingSlider Movable Type Plugin (incomplete)
+# MT-AnythingSlider 1.3.5
 
 From the [AnythingSlider README](http://github.com/dcneiner/AnythingSlider):
 
-> This new AnythingSlider is an attempt at bringing together the functionality of all of those previous (on CSS-Tricks) sliders and adding new features. In other words, to create a really “full featured” slider that could be widely useful. This is the first time (on CSS-Tricks) that one of these sliders is an actual plugin as well, which should make implementing it and customizing it much easier. Keep reading [on GitHub](http://github.com/dcneiner/AnythingSlider) and [CSS-Tricks](http://css-tricks.com/anythingslider-jquery-plugin/).
+> This new AnythingSlider is an attempt at bringing together the functionality of all of those previous (on CSS-Tricks) sliders and adding new features. In other words, to create a really “full featured” slider that could be widely useful. This is the first time (on CSS-Tricks) that one of these sliders is an actual plugin as well, which should make implementing it and customizing it much easier. Keep reading [on GitHub](http://github.com/dcneiner/AnythingSlider) and [CSS-Tricks](http://css-tricks.com/anythingslider-jquery-plugin/). Added functionality from Dean Sofer's 1.3.5 [fork](http://github.com/ProLoser/AnythingSlider).
 
 Now you can easily use AnythingSlider in Movable Type with this plugin!
 
 # jQuery Plugin Overview
 
 * Slides are HTML Content (can be anything)
-* Next Slide / Previous Slide Arrows
+* Optional Next Slide / Previous Slide Arrows
 * Navigation tabs are built and added dynamically (any number of slides)
 * Optional custom function for formatting navigation text
 * Auto-playing (optional feature, can start playing or stopped)
 * Each slide has a hashtag (can link directly to specific slides)
 * Infinite/Continuous sliding (always slides in the direction you are going, even at "last" slide)
-* Multiple sliders allowable per-page (hashtags only work on first)
+* Multiple sliders allowable per-page
 * Pauses autoPlay on hover (option)
 * Link to specific slides from static text links
+* Optionally autoPlay once through, stopping on the last page
 
 ## Usage & Options (defaults)
 
-	$('.anythingSlider').anythingSlider({
-	   easing: "swing",                // Anything other than "linear" or "swing" requires the easing plugin
-	   autoPlay: true,                 // This turns off the entire FUNCTIONALITY, not just if it starts running or not
-	   startStopped: false,            // If autoPlay is on, this can force it to start stopped
-	   delay: 3000,                    // How long between slide transitions in AutoPlay mode
-	   animationTime: 600,             // How long the slide transition takes
-	   hashTags: true,                 // Should links change the hashtag in the URL?
-	   buildNavigation: true,          // If true, builds and list of anchor links to link to each slide
-	   pauseOnHover: true,             // If true, and autoPlay is enabled, the show will pause on hover
-	   startText: "Start",             // Start text
-	   stopText: "Stop",               // Stop text
-	   navigationFormatter: null       // Advanced Use: see AnythingSlider README
+	$('#slider1').anythingSlider({
+		easing: "swing",           // Anything other than "linear" or "swing" requires the easing plugin
+		autoPlay: true,            // This turns off the entire FUNCTIONALY, not just if it starts running or not
+		startStopped: false,       // If autoPlay is on, this can force it to start stopped
+		delay: 3000,               // How long between slide transitions in AutoPlay mode
+		animationTime: 600,        // How long the slide transition takes
+		hashTags: true,            // Should links change the hashtag in the URL?
+		buildNavigation: true,     // If true, builds and list of anchor links to link to each slide
+		pauseOnHover: true,        // If true, and autoPlay is enabled, the show will pause on hover
+		startText: "Start",        // Start text
+		stopText: "Stop",          // Stop text
+		navigationFormatter: null, // Details at the top of the file on this use (advanced use)
+		buildArrows: true,         // If true, builds the forwards and backwards buttons
+		forwardText: "&raquo;",    // Link text used to move the slider forward
+		backText: "&laquo;",       // Link text used to move the slider back
+		width: null,               // Override the default CSS width
+		height: null,              // Override the default CSS height
+		resizeContents: true       // If true, solitary images/objects in the panel will expand to fit the panel
 	});
 
 # Prerequisites
@@ -49,17 +56,17 @@ This plugin is installed [just like any other Movable Type Plugin](http://www.ma
 
 * AnythingSliderSettings - Required as this plugin controls all the options of the AnythingSlider jQuery script.
 
-* AnythingSlider *or* AnythingSliderPages - Install one or the other, **not both**. If your carousel needs to link to Pages and not Entries, install AnythingSliderPages.
+* AnythingSlider - Required as this plugin allows you to change panel options for images and entries.
 
 # Movable Type Plugin Overview
 
-This plugin, based on v1.2 of AnythingSlider, allows for blog-level changes to the AnythingSlider options by going to Tools -> Plugins. Beyond the options mentioned above, this allows you to show/hide a couple elements the original did not, from within Movable Type. Putting these options into a Movable Type interface allows you to quickly make modifications, rebuild your templates, and see your results without tinkering with JavaScript for CSS code.
+This plugin, based on v1.3.5 of AnythingSlider, allows for blog-level changes to the AnythingSlider options by going to Tools -> Plugins. Beyond the options mentioned above, this allows you to show/hide a couple elements the original did not, from within Movable Type. Putting these options into a Movable Type interface allows you to quickly make modifications, rebuild your templates, and see your results without tinkering with JavaScript for CSS code.
 
 ## General Use
 
 While a great deal of flexibility has been revealed in the plugin Settings, you will likely need to tweak the CSS to fit your desired layout. If you plan to use this in your Movable Type site, light editing of the AnythingSlider CSS will be required. 
 
-This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin.
+This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin making it usable with Pages instead of Entries, for example.
 
 ## Theme Designers
 
