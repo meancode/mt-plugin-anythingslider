@@ -10,26 +10,27 @@
 div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .anythingWindow ul li {
 	width: 630px;
 	height: 255px;
+	margin: 0 auto;
 }
 
 /****** SET COLORS HERE *******/
 /* Active */
 div.anythingSlider.activeSlider .thumbNav a.cur, div.anythingSlider.activeSlider .thumbNav a {
-	background-color: #AAAAAA;
+	background-color: #7C9127;
 }
 div.anythingSlider.activeSlider .anythingWindow {
-	border-color: #AAAAAA;
+	border-color: #7C9127;
 }
 /* Inactive */
 div.anythingSlider .thumbNav a.cur, div.anythingSlider .thumbNav a {
-	background: #AAAAAA;
+	background: #777;
 }
 div.anythingSlider .anythingWindow {
-	border-top: 3px solid #AAAAAA;
-	border-bottom: 3px solid #AAAAAA;
+	border-top: 3px solid #777;
+	border-bottom: 3px solid #777;
 }
-/**** DO NOT CHANGE BELOW THIS LINE ****/
 
+/**** DO NOT CHANGE BELOW THIS LINE ****/
 div.anythingSlider .anythingWindow, div.anythingSlider .anythingWindow ul li {
 	width: 100%;
 }
@@ -39,7 +40,7 @@ div.anythingSlider .anythingWindow {
 }
 div.anythingSlider {
 	position: relative;
-	padding: 0 0px 28px 0px;
+	padding: 0 45px 28px 45px;
 }
 div.anythingSlider .anythingWindow ul {
 	/* Width below is max for Opera */
@@ -71,7 +72,7 @@ div.anythingSlider .arrow a {
 	margin-top: -60px;
 	width: 45px;
 	text-align: center;
-	background: url(/images/arrows.png) no-repeat;
+	background: url(../images/arrows.png) no-repeat;
 	text-indent: -9999px;
 }
 div.anythingSlider .forward { right: 0; }
@@ -91,7 +92,7 @@ div.anythingSlider .thumbNav a {
 	padding: 2px 8px;
 	height: 18px;
 	margin: 0 5px 0 0;
-	background-image: url(/images/cellshade.png);
+	background-image: url(../images/cellshade.png);
 	background-repeat: repeat-x;
 	text-align: center;
 	-moz-border-radius-bottomleft: 5px;
@@ -103,20 +104,20 @@ div.anythingSlider .thumbNav a:hover { background-image: none; }
 
 div.anythingSlider .start-stop {
 	z-index: 10;
-	background: #2f7eca url(/images/cellshade.png) repeat-x center top;
+	background: green url(../images/cellshade.png) repeat-x center top;
 	color: white;
 	padding: 2px 5px;
 	width: 40px;
 	text-align: center;
 	position: absolute;
 	text-decoration: none;
-	right: 0px; bottom: 4px;
+	right: 45px; bottom: 4px;
 	-moz-border-radius-bottomleft: 5px;
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
 }
-div.anythingSlider .start-stop.playing { background-color: #919191; }
+div.anythingSlider .start-stop.playing { background-color: red; }
 div.anythingSlider .start-stop:hover { background-image: none; }
 
 /*
