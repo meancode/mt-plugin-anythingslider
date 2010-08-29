@@ -80,7 +80,7 @@ Navigate to Design > Templates of the Blog you wish to use AnythingSlider and cl
 
 Edit the Template Module `AnythingSlider HTML Head` only if you have jQuery added to your template already. If that is the case, delete this line:
 
-	<script type="text/javascript" src="<mt:AnythingSliderStaticWebPath>jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="<mt:PluginStaticWebPath component="AnythingSlider">jquery-1.4.2.min.js"></script>
 	
 Add this Template Module to your template, usually in a `HTML Head` or `Header` Template Module in your blog.
 
@@ -102,6 +102,26 @@ AnythingSlider has installed both Template Modules and Widgets for the carousel,
 
 ### Version 0.5
 * AnythingSlider and AnythingSlider Settings plugins based on AnythingSlider 1.2 jQuery plugin by Chris Coyier.
+
+# The Big To-Do #
+
+* Add for the README:
+  - instructions for modifying plugin defaults
+  - instructions for changing plugin behavior
+  - how to add template modules to your own templates
+  - info on the default arrows.png sprites and cellshade.png images
+  - instructions for linking directly to slides
+* Create/update template modules:
+  - carousel module for Page-based slides
+  - carousel module for Category-based slides
+  - carousel module for Folder-based slides
+  - update HTML Head to include link functions to easily add links to slides
+* AnythingSlider Settings:
+  - add the ability to modify colors through the plugin
+  - add the ability to modify the width of the slider in plugin settings
+* AnythingSlider:
+  - add "Slide Type" to allow for article/photo/video slides toggle
+  - add in other options for easing from the easing plugin
 
 # About Meancode Media, LLC
 
