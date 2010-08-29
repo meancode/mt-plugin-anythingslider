@@ -1,9 +1,12 @@
- <!-- AnythingSlider #1 -->
+<!-- AnythingSlider #1 -->
 <ul id="slider1">
 <!-- Panel 1 -->
   <mt:IfAnythingSliderP1Check>
       <mt:SetVarBlock name="anything_p1entry"><$mt:AnythingSliderP1Entry$></mt:SetVarBlock>
       <mt:SetVarBlock name="anything_panel1img"><$mt:AnythingSliderP1Img$></mt:SetVarBlock>
+      <mt:SetVarBlock name="anything_breakingimg"><$mt:AnythingSliderBreakingImg$></mt:SetVarBlock>
+      <mt:SetVarBlock name="anything_updatedimg"><$mt:AnythingSliderUpdatedImg$></mt:SetVarBlock>
+      <mt:SetVarBlock name="anything_featuredimg"><$mt:AnythingSliderFeaturedImg$></mt:SetVarBlock>
 	<mt:Entries id="$anything_p1entry">
 	<li>
 		<mt:Asset id="$anything_panel1img">
@@ -11,16 +14,16 @@
 		  <tr>
 		    <td width="340" valign="top" style="background: #000 url(<mt:AssetThumbnailURL width="340">) no-repeat left top;">
 			<mt:If tag="AnythingSliderP1Type" eq="Breaking">
-			<div class="anythingslider-breaking"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png" width="189" height="22"></div>
+			<div class="anythingslider-breaking"><img src="<mt:If tag="AnythingSliderBreakingImg"><mt:Asset id="$anything_breakingimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP1Type" eq="Updated">
-			<div class="anythingslider-updated"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png" width="108" height="22"></div>
+			<div class="anythingslider-updated"><img src="<mt:If tag="AnythingSliderUpdatedImg"><mt:Asset id="$anything_updatedimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP1Type" eq="Featured">
-			<div class="anythingslider-featured"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png" width="118" height="22"></div>
+			<div class="anythingslider-featured"><img src="<mt:If tag="AnythingSliderFeaturedImg"><mt:Asset id="$anything_featuredimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png</mt:If>"></div>
 			</mt:If>
 			&nbsp;</td>
-		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="Entry Summary AnythingSlider"$></td>
+		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="AnythingSlider Entry Summary"$></td>
 		  </tr>
 		</table>
 		</mt:Asset>
@@ -38,16 +41,16 @@
 		  <tr>
 		    <td width="340" valign="top" style="background: #000 url(<mt:AssetThumbnailURL width="340">) no-repeat left top;">
 			<mt:If tag="AnythingSliderP2Type" eq="Breaking">
-			<div class="anythingslider-breaking"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png" width="189" height="22"></div>
+			<div class="anythingslider-breaking"><img src="<mt:If tag="AnythingSliderBreakingImg"><mt:Asset id="$anything_breakingimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP2Type" eq="Updated">
-			<div class="anythingslider-updated"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png" width="108" height="22"></div>
+			<div class="anythingslider-updated"><img src="<mt:If tag="AnythingSliderUpdatedImg"><mt:Asset id="$anything_updatedimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP2Type" eq="Featured">
-			<div class="anythingslider-featured"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png" width="118" height="22"></div>
+			<div class="anythingslider-featured"><img src="<mt:If tag="AnythingSliderFeaturedImg"><mt:Asset id="$anything_featuredimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png</mt:If>"></div>
 			</mt:If>
 			&nbsp;</td>
-		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="Entry Summary AnythingSlider"$></td>
+		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="AnythingSlider Entry Summary"$></td>
 		  </tr>
 		</table>
 		</mt:Asset>
@@ -65,16 +68,16 @@
 		  <tr>
 		    <td width="340" valign="top" style="background: #000 url(<mt:AssetThumbnailURL width="340">) no-repeat left top;">
 			<mt:If tag="AnythingSliderP3Type" eq="Breaking">
-			<div class="anythingslider-breaking"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png" width="189" height="22"></div>
+			<div class="anythingslider-breaking"><img src="<mt:If tag="AnythingSliderBreakingImg"><mt:Asset id="$anything_breakingimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP3Type" eq="Updated">
-			<div class="anythingslider-updated"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png" width="108" height="22"></div>
+			<div class="anythingslider-updated"><img src="<mt:If tag="AnythingSliderUpdatedImg"><mt:Asset id="$anything_updatedimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP3Type" eq="Featured">
-			<div class="anythingslider-featured"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png" width="118" height="22"></div>
+			<div class="anythingslider-featured"><img src="<mt:If tag="AnythingSliderFeaturedImg"><mt:Asset id="$anything_featuredimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png</mt:If>"></div>
 			</mt:If>
 			&nbsp;</td>
-		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="Entry Summary AnythingSlider"$></td>
+		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="AnythingSlider Entry Summary"$></td>
 		  </tr>
 		</table>
 		</mt:Asset>
@@ -92,16 +95,16 @@
 		  <tr>
 		    <td width="340" valign="top" style="background: #000 url(<mt:AssetThumbnailURL width="340">) no-repeat left top;">
 			<mt:If tag="AnythingSliderP4Type" eq="Breaking">
-			<div class="anythingslider-breaking"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png" width="189" height="22"></div>
+			<div class="anythingslider-breaking"><img src="<mt:If tag="AnythingSliderBreakingImg"><mt:Asset id="$anything_breakingimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP4Type" eq="Updated">
-			<div class="anythingslider-updated"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png" width="108" height="22"></div>
+			<div class="anythingslider-updated"><img src="<mt:If tag="AnythingSliderUpdatedImg"><mt:Asset id="$anything_updatedimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP4Type" eq="Featured">
-			<div class="anythingslider-featured"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png" width="118" height="22"></div>
+			<div class="anythingslider-featured"><img src="<mt:If tag="AnythingSliderFeaturedImg"><mt:Asset id="$anything_featuredimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png</mt:If>"></div>
 			</mt:If>
 			&nbsp;</td>
-		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="Entry Summary AnythingSlider"$></td>
+		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="AnythingSlider Entry Summary"$></td>
 		  </tr>
 		</table>
 		</mt:Asset>
@@ -119,16 +122,16 @@
 		  <tr>
 		    <td width="340" valign="top" style="background: #000 url(<mt:AssetThumbnailURL width="340">) no-repeat left top;">
 			<mt:If tag="AnythingSliderP5Type" eq="Breaking">
-			<div class="anythingslider-breaking"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png" width="189" height="22"></div>
+			<div class="anythingslider-breaking"><img src="<mt:If tag="AnythingSliderBreakingImg"><mt:Asset id="$anything_breakingimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-breaking.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP5Type" eq="Updated">
-			<div class="anythingslider-updated"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png" width="108" height="22"></div>
+			<div class="anythingslider-updated"><img src="<mt:If tag="AnythingSliderUpdatedImg"><mt:Asset id="$anything_updatedimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-updated.png</mt:If>"></div>
 			</mt:If>
 			<mt:If tag="AnythingSliderP5Type" eq="Featured">
-			<div class="anythingslider-featured"><img src="<mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png" width="118" height="22"></div>
+			<div class="anythingslider-featured"><img src="<mt:If tag="AnythingSliderFeaturedImg"><mt:Asset id="$anything_featuredimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">anythingslider-featured.png</mt:If>"></div>
 			</mt:If>
 			&nbsp;</td>
-		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="Entry Summary AnythingSlider"$></td>
+		    <td width="290" valign="top" class="anythingslider-article"><$mt:Include module="AnythingSlider Entry Summary"$></td>
 		  </tr>
 		</table>
 		</mt:Asset>
