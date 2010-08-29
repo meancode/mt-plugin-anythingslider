@@ -90,6 +90,19 @@ AnythingSlider has installed both Template Modules and Widgets for the carousel,
 
 	<$mt:Include module="AnythingSlider Image Slider"$>
 
+# Changelog
+
+### Version 1.1
+* Minor bug fix in Template Module code.
+* Added features to AnythingSlider Settings and CSS Index Template.
+
+### Version 1.0
+* Updated AnythingSlider Settings plugin and CSS with 1.3.5 updates to jQuery plugin by Dean Sofer.
+* Setup Template Modules to make it easy to edit and add to a Movable Type site.
+
+### Version 0.5
+* AnythingSlider and AnythingSlider Settings plugins based on AnythingSlider 1.2 jQuery plugin by Chris Coyier.
+
 # About Meancode Media, LLC
 
 We provide web design and development, as well as hosting services. Specializing in Movable Type and blog/CMS design, our goal is to provide users with easy to manage web sites.
