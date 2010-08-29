@@ -74,7 +74,7 @@ div.anythingSlider .arrow a {
 	margin-top: -60px;
 	width: 45px;
 	text-align: center;
-	background: url(<mt:Asset id="$anything_arrowsimg"><mt:AssetURL></mt:Asset>) no-repeat;
+	background: url(<mt:If tag="AnythingSliderArrowsImg"><mt:Asset id="$anything_arrowsimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">arrows.png</mt:If>) no-repeat;
 	text-indent: -9999px;
 }
 div.anythingSlider .forward { right: 0; }
@@ -95,7 +95,7 @@ div.anythingSlider .thumbNav a {
 	padding: 2px 8px;
 	height: 18px;
 	margin: 0 5px 0 0;
-	background-image: url(<mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset>);
+	background-image: url(<mt:If tag="AnythingSliderThumbImg"><mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">cellshade.png</mt:If>);
 	background-repeat: repeat-x;
 	text-align: center;
 	-moz-border-radius-bottomleft: 5px;
@@ -107,7 +107,7 @@ div.anythingSlider .thumbNav a:hover { background-image: none; }
 
 div.anythingSlider .start-stop {
 	z-index: 10;
-	background: green url(<mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset>) repeat-x center top;
+	background: green url(<mt:If tag="AnythingSliderThumbImg"><mt:Asset id="$anything_thumbimg"><mt:AssetURL></mt:Asset><mt:Else><mt:PluginStaticWebPath component="AnythingSlider">cellshade.png</mt:If>) repeat-x center top;
 	color: white;
 	padding: 2px 5px;
 	width: 40px;
@@ -119,6 +119,7 @@ div.anythingSlider .start-stop {
 	-moz-border-radius-bottomright: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 	-webkit-border-bottom-left-radius: 5px;
+	<mt:IfAnythingSliderStartStop>visibility: hidden;<mt:Else>visibility: visible;</mt:IfAnythingSliderStartStop>
 }
 div.anythingSlider .start-stop.playing { background-color: red; }
 div.anythingSlider .start-stop:hover { background-image: none; }

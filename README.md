@@ -1,10 +1,12 @@
-# MT-AnythingSlider 1.3.5
+# MT-AnythingSlider 1.1
 
 From the [AnythingSlider README](http://github.com/dcneiner/AnythingSlider):
 
-> This new AnythingSlider is an attempt at bringing together the functionality of all of those previous (on CSS-Tricks) sliders and adding new features. In other words, to create a really “full featured” slider that could be widely useful. This is the first time (on CSS-Tricks) that one of these sliders is an actual plugin as well, which should make implementing it and customizing it much easier. Keep reading [on GitHub](http://github.com/dcneiner/AnythingSlider) and [CSS-Tricks](http://css-tricks.com/anythingslider-jquery-plugin/). Added functionality from Dean Sofer's 1.3.5 [fork](http://github.com/ProLoser/AnythingSlider).
+> This new AnythingSlider is an attempt at bringing together the functionality of all of those previous (on CSS-Tricks) sliders and adding new features. In other words, to create a really “full featured” slider that could be widely useful. This is the first time (on CSS-Tricks) that one of these sliders is an actual plugin as well, which should make implementing it and customizing it much easier. Keep reading [on GitHub](http://github.com/dcneiner/AnythingSlider) and [CSS-Tricks](http://css-tricks.com/anythingslider-jquery-plugin/). 
 
-Now you can easily use AnythingSlider in Movable Type with this plugin!
+> Added features and functionality from Dean Sofer's 1.3.5 [AnythingSlider fork](http://github.com/ProLoser/AnythingSlider).
+
+**Now you can easily use AnythingSlider in Movable Type with this plugin**!
 
 # jQuery Plugin Overview
 
@@ -56,7 +58,7 @@ This plugin is installed [just like any other Movable Type Plugin](http://www.ma
 
 * AnythingSliderSettings - Required as this plugin controls all the options of the AnythingSlider jQuery script.
 
-* AnythingSlider - Required as this plugin allows you to change panel options for images and entries.
+* AnythingSlider - Required as this plugin allows you to change panel options for images and entries, it also includes the jQuery scripts and default images used by the plugin.
 
 # Movable Type Plugin Overview
 
@@ -66,7 +68,7 @@ This plugin, based on v1.3.5 of AnythingSlider, allows for blog-level changes to
 
 While a great deal of flexibility has been revealed in the plugin Settings, you will likely need to tweak the CSS to fit your desired layout. If you plan to use this in your Movable Type site, light editing of the AnythingSlider CSS will be required. 
 
-This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin making it usable with Pages instead of Entries, for example.
+This project was started so it is easy to use the same code base (AnythingSlider) on multiple Movable Type sites, and multiple blogs within the same install. I encourage you to use this Movable Type plugin in the same manor. It is intentionally built using [Config Assistant](http://github.com/endevver/mt-plugin-configassistant) for both rapid development and modification for others to deploy in their projects. For example, you can easily change the defaults in the `config.yaml` file before you upload the plugin.
 
 ## Theme Designers
 
@@ -86,7 +88,7 @@ Add this Template Module to your template, usually in a `HTML Head` or `Header` 
 	
 AnythingSlider has installed both Template Modules and Widgets for the carousel, as people design their Index and Archive templates differently. AnythingSlider also provides a number of different formats to display the carousel, the first of which is a simple image based slider. If using Widgets, go to Design > Widgets and add the appropriate AnythingSlider Widget to your Widget Set. If using Template Modules, add it to your blog, like this:
 
-	<$mt:Include module="AnythingSlider Images Only"$>
+	<$mt:Include module="AnythingSlider Image Slider"$>
 
 # About Meancode Media, LLC
 
