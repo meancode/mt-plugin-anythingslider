@@ -116,6 +116,7 @@ AnythingSlider has installed both Template Modules and Widgets for the carousel,
   - carousel module for Category-based slides
   - carousel module for Folder-based slides
   - update HTML Head to include link functions to easily add links to slides
+  - carousel module that uses MultiBlog
 * AnythingSlider Settings:
   - add the ability to modify colors through the plugin
   - add the ability to modify the width of the slider in plugin settings
