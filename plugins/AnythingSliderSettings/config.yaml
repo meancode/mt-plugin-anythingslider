@@ -1,12 +1,12 @@
-id: AnythingSliderSettings
-name: AnythingSlider Settings
-version: 1.1
+id: AnythingSlider
+name: TMC AnythingSlider Settings
+version: 1.2
 author_name: Ken Edwards, Meancode Media, LLC
-author_link: http://meancode.com/bgviews
-doc_link: http://meancode.com/bgviews
-icon: icon.gif
-plugin_link: http://github.com/meancode/mt-plugin-anythingslider
-description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. To change the contents of the slider itself, click on AnythingSlider above.
+author_link: http://meancode.com/
+doc_link: http://github.com/meancode/mt-plugin-anythingslider
+plugin_link: http://github.com/meancode/mt-plugin-anythingslider/tree/tmcnet
+description: Here you will modify the different options available for using AnythingSlider inside of Movable Type. The contents of the slider itself is pulled from blog content.
+static_version: 2
 
 options:
   fieldsets:

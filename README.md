@@ -1,4 +1,4 @@
-# MT-AnythingSlider 1.1
+# MT-AnythingSlider 1.2 TMC Net
 
 From the [AnythingSlider README](http://github.com/dcneiner/AnythingSlider):
 
@@ -57,8 +57,6 @@ This plugin is installed [just like any other Movable Type Plugin](http://www.ma
 * TemplateInstaller - Required to easily install all AnythingSlider templates and widgets. If you have TemplateInstaller installed, navigate to `TemplateInstaller/template_sets` and copy the `anythingslider` template set to the same folder on your server.
 
 * AnythingSliderSettings - Required as this plugin controls all the options of the AnythingSlider jQuery script.
-
-* AnythingSlider - Required as this plugin allows you to change panel options for images and entries, it also includes the jQuery scripts and default images used by the plugin.
 
 # Movable Type Plugin Overview
 
